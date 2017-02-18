@@ -1,0 +1,93 @@
+<!DOCTYPE HTML> 
+<html> 
+<head>
+
+    <script type="text/javascript" ></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <Link rel="stylesheet" href="CSS/style.css">
+    
+    <script>
+        $("window").scroll(function() {
+            counter=document.body.scrollTop;
+            $("#count").html(counter);
+        });
+    </script>
+</head>
+<body>
+    <p id="count">0000</p>
+    <div class="holder" data-0="left:0px" data-10000="left:-8560px">
+        <div class="containContent">
+            
+            <div class="mid"></div>
+            <div class="front"></div>
+            
+            <div class=marker>
+                <p>1000</p>
+                <p>2000</p>
+                <p>3000</p>
+                <p>4000</p>
+                <p>5000</p>
+                <p>6000</p>
+                <p>7000</p>
+                <p>8000</p>
+                <p>9000</p>
+                <p>10000</p>
+            </div>
+            <div></div>
+        </div>   
+    </div>
+    
+    <div class="back" data-0="left:0px" data-10000="left:-800px">
+         <div class="containContent">
+                <div class="blue-col"></div>
+                <div class="blue-col"></div>
+                <div class="blue-col"></div>
+                <div class="blue-col"></div>
+            </div>
+         </div>
+    </div>
+    
+    <div class="mid" data-0="left:0px" data-10000="left:-1700px">
+         <div class="containContent">
+                <div class="green-col"></div>
+                <div class="green-col"></div>
+                <div class="green-col"></div>
+                <div class="green-col"></div>
+                <div class="green-col"></div>
+            </div>
+         </div>
+    </div>
+    
+    
+    <div class="front" data-0="left:0px" data-10000="left:-3200px">
+         <div class="containContent">
+                <div class="yellow-col"></div>
+                <div class="yellow-col"></div>
+                <div class="yellow-col"></div>
+                <div class="yellow-col"></div>
+                <div class="yellow-col"></div>
+            </div>
+         </div>
+    </div>
+    
+    <div class="mid">
+        
+    </div>
+    
+    <div class="front">
+        
+    </div>
+    <script src="src/skrollr.js""></script>
+
+    <script type="text/javascript">
+        var s = skrollr.init({
+            render: function(data) {
+            //Debugging - Log the current scroll position.
+            console.log(data.curTop);
+        }
+    });
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE HTML> 
+<html> 
+<head>
+
+    <script type="text/javascript" ></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <Link rel="stylesheet" href="css/east-style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i|Cormorant+Infant:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    
+    <script>
+        $("window").scroll(function() {
+            counter=document.body.scrollTop;
+            $("#count").html(counter);
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+
+<!--Marker-->
+    <p style="z-index: 100;" id="count">0000</p>
+
+    <div class="holder" data-0="left:0px" data-10000="left:-8560px">   
+            <div class="marker">
+                <p>1000</p>
+                <p>2000</p>
+                <p>3000</p>
+                <p>4000</p>
+                <p>5000</p>
+                <p>6000</p>
+                <p>7000</p>
+                <p>8000</p>
+                <p>9000</p>
+                <p>10000</p>
+            </div>  
+    </div>
+    
+    <div class="back" data-0="left:0px" data-10000="left:-72px">
+        <div class="backgroundcolor"></div>
+        <img class="backgroundimg" src="img/cottage-outside.jpg">
+    </div>
+
+<!--Text boxes-->
+    <div class="mid" 
+    data-0="left:100%" 
+    data-6000="left: 0%"
+    data-8000="left: 0%"
+    data-10000="left:-100%">
+        <div class="text" id="t1">
+            <p>That day the girl sat down outside under the castle window and began to spin with her golden spinning wheel, and the princess with the long nose wanted to have it as well. She opened the window and asked what she wanted for it. The girl said, as she had said twice before, that it wasn't for sale for gold or money, but if she could go to the prince who was there, and be alone with him that night she could have it.</p>
+        </div>
+        <div class="text" id="t2">
+            <p>Yes, she would be welcome to do that. But now you must know that there were some Christians who had been taken there, and while they were sitting in their room, which was next to the prince's, they had heard how a woman had been in there, crying, praying, and calling to him for two nights in a row, and they told this to the prince.</p>
+            <p>That evening, when the princess came with a sleeping potion, the prince pretended to drink it, but threw it over his shoulder, for he could guess it was a sleeping potion. So, when the girl came in, she found the prince wide awake, and then she told him the whole story of how she had come there.</p>
+            <p>"Ah," said the prince, "you've come in the very nick of time, for tomorrow is to be our wedding day. But now I won't have the long-nose, and you are the only woman in the world who can set me free. I'll say that I want to see what my wife is fit for, and beg her to wash the shirt which has the three spots of tallow on it. She'll agree, for she doesn't know that you are the one who put them there. Only Christians, and not such a pack of trolls, can wash them out again. I'll say that I will marry only the woman who can wash them out, and ask you to try it."</p>
+            <p>So there was great joy and love between them all the night. </p>
+        </div>
+    </div>
+
+<!--Expressive text-->
+    <div class="text-block-7">
+        <span id="tb1"></span>
+        <span id="tb2"></span>
+    </div>
+    
+ <!--Characters-->   
+    <div class="character-block" data-0="left:0px" data-10000="left:-3200px">
+        <img src="img/East-girl-1.png" class="character girl"
+        data-9000="left:100%, transform: scale(80%)"
+        data-10000="left: 0%, transform: scale(100%)">
+<!--    data-3000="left:100%"
+        data-6000="transform: translateX(-500px)"
+        data-8000="transform: translateX(0px)"
+        data-9000="transform: translateX(-200px)" -->
+    </div>
+
+<!--Front: Objects-->
+
+
+
+</div><!--container-->
+
+    <script src="src/skrollr.js"></script>
+
+    <script type="text/javascript">
+        var s = skrollr.init({
+            render: function(data) {
+            //Debugging - Log the current scroll position.
+            console.log(data.curTop);
+        }
+    });
+        
+    </script>
+    
+</body>
+</html>

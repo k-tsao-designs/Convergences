@@ -1,0 +1,91 @@
+<!DOCTYPE HTML> 
+<html> 
+<head>
+
+    <script type="text/javascript" ></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <Link rel="stylesheet" href="css/east-style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i|Cormorant+Infant:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    
+    <script>
+        $("window").scroll(function() {
+            counter=document.body.scrollTop;
+            $("#count").html(counter);
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+
+<!--Marker-->
+    <p style="z-index: 100;" id="count">0000</p>
+
+    <div class="holder" data-0="left:0px" data-10000="left:-8560px">   
+            <div class="marker">
+                <p>1000</p>
+                <p>2000</p>
+                <p>3000</p>
+                <p>4000</p>
+                <p>5000</p>
+                <p>6000</p>
+                <p>7000</p>
+                <p>8000</p>
+                <p>9000</p>
+                <p>10000</p>
+            </div>  
+    </div>
+    
+    <div class="back" data-0="left:0px" data-10000="left:-72px">
+        <div class="backgroundcolor"></div>
+        <img class="backgroundimg" src="img/cottage-outside.jpg">
+    </div>
+
+<!--Text boxes-->
+    <div class="mid" 
+    data-0="left:100%" 
+    data-6000="left: 0%"
+    data-8000="left: 0%"
+    data-10000="left:-100%">
+        <div class="text" id="t1">
+            <p>At last she came to another great cliff, under which sat another old woman, spinning with a golden spinning wheel. She asked her, as well, if she knew the way to the prince, and where the castle was that lay east of the sun and west of the moon. But it was the same thing over again.</p>
+            <p>"Perhaps you are the one who should have had the prince?" said the old woman.</p>
+            <p>Yes, that she was.</p>
+            <p>But she didn't know the way any better than the other two. She knew it was east of the sun and west of the moon, but that was all.</p>
+            <p>"And you'll get there too late or never; but I'll lend you my horse, and then I think you'd best ride to the east wind and ask him; maybe he knows his way around those parts, and can blow you there. When you get to him, just give the horse a switch under the left ear, and he'll trot home by himself."</p>
+            <p>She too gave her her golden spinning wheel. "Maybe you'll find a use for it," said the old woman.</p>
+        </div>
+
+    </div>
+
+    
+ <!--Characters-->   
+    <div class="character-block" data-0="left:0px" data-10000="left:-3200px">
+        <img src="img/East-girl-1.png" class="character girl"
+        data-9000="left:100%, transform: scale(80%)"
+        data-10000="left: 0%, transform: scale(100%)">
+<!--    data-3000="left:100%"
+        data-6000="transform: translateX(-500px)"
+        data-8000="transform: translateX(0px)"
+        data-9000="transform: translateX(-200px)" -->
+    </div>
+
+<!--Front: Objects-->
+
+
+
+</div><!--container-->
+
+    <script src="src/skrollr.js"></script>
+
+    <script type="text/javascript">
+        var s = skrollr.init({
+            render: function(data) {
+            //Debugging - Log the current scroll position.
+            console.log(data.curTop);
+        }
+    });
+        
+    </script>
+    
+</body>
+</html>
