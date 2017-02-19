@@ -1,17 +1,4 @@
-body {
-    margin: 0;
-    height: 10000px;
-    overflow: visible;
-    font-family: 'Cormorant Garamond', serif;
-    font-family: 'Cormorant Infant', serif;
-    background-color: #879DBF;
-}
-
-.container {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-}
+/*east-style*/
 
 .back {
     height: 100%;
@@ -40,7 +27,8 @@ body {
 
 .title {
     height: 100%;
-    width: 10%;
+    width: 50%;
+    position: absolute;
 }
 
 .story-title {
@@ -71,6 +59,20 @@ body {
     font-size: 1.5em;
 }
 
+.lark-link {
+    color: green;
+}
+
+.link-img {
+    height: 10%;
+    width: auto;
+    z-index: 75;
+    position: absolute;
+    right: 10%;
+    top: 25%;
+}
+
+/*east1 style*/
 #t1 {
     left: 0%;
     padding-top: 4%;
@@ -100,37 +102,62 @@ body {
     left: 70%;
 }
 
+/*Text blocks*/
+.text-block {
 
-
-/*Counting the pixel change*/
-.holder {
-    /*background: linear-gradient(to right, red , yellow); /* Standard syntax */*/
-    height: 100%;
-    width: 10000px;
-    position: absolute;
-    z-index: 100;
-    
-    transform: translate(0%,-50%);
 }
 
-.marker {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: blue;
-    text-align: right;
-    height: 10px;
+.text-block:span {
+    position: relative;
 }
 
-.marker p {
-    width: 1000px;
-    display: inline-block;
-    float: left;
-    
+/*Page 3*/
+#tb1 {
+
+}
+/*Page 11*/
+    #tb1b {
+
+    }
+
+/*Page 6*/
+#tb2 {
+
+}
+#tb3 {
+
 }
 
-#count {
-    position: fixed;
-    top: 0;
-    left: 0;
+/*Page 7*/
+#tb4 {
+
 }
+
+/*Page 10*/
+#tb5 {
+
+}
+
+/*Page 12*/
+#tb6 {
+
+}
+
+/*Page 15*/
+#tb7 {
+
+}
+
+/*Page 16*/
+#tb8 {
+
+}
+#tb9 {
+
+}
+
+
+
+
+
+
