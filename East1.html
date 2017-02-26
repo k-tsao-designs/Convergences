@@ -7,7 +7,7 @@
     <Link rel="stylesheet" href="css/style.css">
     <Link rel="stylesheet" href="css/east-style.css">
     <Link rel="stylesheet" href="css/east1.css">
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i|Cormorant+Infant:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     
     <script>
         $("window").scroll(function() {
@@ -20,8 +20,6 @@
 <div class="container">
 
     <!--Marker-->
-    <p style="z-index: 100;" id="count">0000</p>
-
     <div class="holder" data-0="left:0px" data-10000="left:-8560px">   
             <div class="marker">
                 <p>1000</p>
@@ -38,7 +36,10 @@
     </div>
 
 <!--Title screen-->
-    <div class="title">
+    <div class="title"
+    data-0="left:0%"
+    data-2500="left:0%"
+    data-5000="left: -100%">
         <span class="story-title">East of the Sun and West of the Moon</span><br>
         <span class="subtitle">Norway, Moe and Abjorsen 1845</span>
     </div>
@@ -46,7 +47,7 @@
 <!--Background-->
     <div class="back" data-0="left:0px" data-10000="left:-72px">
         <div class="backgroundcolor"></div>
-        <img class="backgroundimg" src="img/cottage-outside.jpg">
+        <img class="backgroundimg" src="img/east1.jpg">
     </div>
 
 <!--Text boxes-->
@@ -73,7 +74,7 @@
     </div>
 
 <!--Front: Objects-->
-    <a href="East2.html"><img class="link-img" src="img/East-link.png" alt="One day &#x97; it was"></a>
+    <a href="East2.html"><img class="link-img" src="img/East-link.png" title="One day &#x97; it was"></a>
 
 
 </div><!--container-->

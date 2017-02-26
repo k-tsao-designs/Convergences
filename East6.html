@@ -6,8 +6,12 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
     <Link rel="stylesheet" href="css/style.css">
     <Link rel="stylesheet" href="css/east-style.css">
-    <Link rel="stylesheet" href="css/east6.css">
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i|Cormorant+Infant:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <style>
+        body {height: 16000px;}
+        .holder {width: 16000px;}
+        #t2 {left: 182%;}
+    </style>
     
     <script>
         $("window").scroll(function() {
@@ -22,7 +26,7 @@
 <!--Marker-->
     <p style="z-index: 100;" id="count">0000</p>
 
-    <div class="holder" data-0="left:0px" data-10000="left:-8560px">   
+    <div class="holder" data-0="left:0px" data-16000="left:-16000px">  <!--this must equal the height and holder width-->
             <div class="marker">
                 <p>1000</p>
                 <p>2000</p>
@@ -34,40 +38,52 @@
                 <p>8000</p>
                 <p>9000</p>
                 <p>10000</p>
+                <p>11000</p>
+                <p>12000</p>
+                <p>13000</p>
+                <p>14000</p>
+                <p>15000</p>
+                <p>16000</p>
             </div>  
     </div>
     
     <div class="back" data-0="left:0px" data-10000="left:-72px">
         <div class="backgroundcolor"></div>
-        <img class="backgroundimg" src="img/cottage-outside.jpg">
+<!--         <img class="backgroundimg" src="img/cottage-outside.jpg"> -->
     </div>
 
 <!--Text boxes-->
-    <div class="mid" 
-    data-0="left:100%" 
-    data-6000="left: 0%"
-    data-8000="left: 0%"
-    data-10000="left:-100%">
+    <div class="mid"data-0="left:0%" 
+    data-3000="left: 0%"
+    data-8000="left: -100%"
+    data-9000="left:-110%"
+    data-16000="left:-200%">
         <div class="text" id="t1">
             <p>So when she reached home, and had gone to bed, it was the same as before. A man came and lay down beside her; but in the middle of the night, when she heard that he was fast asleep, she got up and lit the candle. She let the <a href="lark6.html"><span class="lark-link">light</span></a> shine on him, and saw that he was the most handsome prince one ever set eyes on. She fell so deeply in love with him, that she thought she couldn't live if she didn't give him a kiss at once. And so she did, but as she kissed him she let three drops of hot tallow drip onto his shirt, and he woke up.</p>
         </div>
         <div class="text" id="t2">
             <!-- Insert text-block-2 here-->
-            <p>"I have a stepmother who has bewitched me, so that I am a white bear by day, and a man by night. But now all ties are broken between us. Now I must leave you for her. She lives in a castle east of the sun and west of the moon, and there, too, is a princess, one with a nose three yards long, and now I will have to marry her."</p>
+            <p>&#x93;I have a stepmother who has bewitched me, so that I am a white bear by day, and a man by night. But now all ties are broken between us. Now I must leave you for her. She lives in a castle east of the sun and west of the moon, and there, too, is a princess, one with a nose three yards long, and now I will have to marry her.&#x94;</p>
             <p>She cried and grieved, but there was no help for it; he had to go. Then she asked if she could go with him.</p>
             <p>No, she could not.</p>
-            <p>"Tell me the way then, so I can look for you; surely I may do that."</p>
+            <p>&#x93;Tell me the way then, so I can look for you; surely I may do that.&#x94;</p>
             <!--aka text-block-3-->
             <p>Yes, she could do that, but there was no way leading to the place. It lay east of the sun and west of the moon, and she'd never find her way there.</p>
         </div>
     </div>
 
 <!--Expressive text-->
-    <div class="text-block" id="tb2">
-        <span id="tb2-1">What have you done? Now you have made
-us both unlucky, for had you held out only
-this one year, I would have been free!</span>
-        <span id="tb2-2"></span>
+    <div class="text-block" id="tb2"
+    data-0="left:100%"
+    data-5000="left:100%"
+    data-6000="left:25%"
+    data-12000="left:25%"
+    data-16000="left:-100%"
+    >
+        <span id="tb2-1">What have you done?</span><br><br><br><br>
+        <span id="tb2-2">Now you have made us <span style="font-style:italic;">both</span> unlucky,</span><br>
+        <span id="tb2-3">for had you held out only this <span style="font-style:italic;">one</span> year,</span><br>
+        <span id="tb2-4">I would have been <span style="font-style:italic;">free!</span></span>
     </div>
     <div class="text-block" id="tb3">
         <span id="tb3-1">Tell me the way</span>
@@ -90,7 +106,7 @@ this one year, I would have been free!</span>
     </div>
 
 <!--Front: Objects-->
-
+    <a href="East7.html"><img class="link-img" src="img/East-link.png" title="The next morning, when she woke up"></a>
 
 
 </div><!--container-->

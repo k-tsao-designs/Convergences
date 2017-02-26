@@ -27,15 +27,20 @@
 
 .title {
     height: 100%;
-    width: 50%;
+    width: 90%;
     position: absolute;
+    z-index: 80;
+    background-color: #A7CAE1;
 }
 
 .story-title {
+    position: relative;
     font-weight: 700;
     font-size: 4em;
 }
 .subtitle {
+    position: relative;
+
     font-size: 2em;
     font-style: italic;
 }
@@ -56,21 +61,10 @@
     opacity: .9;
     position: absolute;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
-.lark-link {
-    color: green;
-}
 
-.link-img {
-    height: 10%;
-    width: auto;
-    z-index: 75;
-    position: absolute;
-    right: 10%;
-    top: 25%;
-}
 
 /*east1 style*/
 #t1 {
@@ -80,6 +74,11 @@
 
 #t2 {
     left: 100%;
+    padding-top: 4%;
+}
+
+#t3 {
+    left: 200%;
     padding-top: 4%;
 }
 
@@ -104,11 +103,14 @@
 
 /*Text blocks*/
 .text-block {
+    z-index: 75;
+    position: relative;
+    background-color: white;
 
 }
 
 .text-block:span {
-    position: relative;
+    position: absolute;
 }
 
 /*Page 3*/
@@ -122,10 +124,21 @@
 
 /*Page 6*/
 #tb2 {
-
+    top: 23%;
+    left: 45%;
+    padding: 25px;
+    width: 43.25%;
+    height: 45%;
 }
+#tb2-1 {font-size: 4em; font-weight: 300;text-align: center;}
+#tb2-2, #tb2-3, #tb2-4 {font-size: 1.75em; font-weight: 400;left: 2%;}
+.tb2em {font-style: italic; font-weight: 600; font-size: 2.5em}
 #tb3 {
-
+    top: 11%;
+    left: 45%;
+    padding: 25px;
+    width: 60%;
+    height: 45%;
 }
 
 /*Page 7*/
@@ -153,7 +166,42 @@
 
 }
 #tb9 {
+    position: absolute;
+    top: 45%;
+}
+    #tb9-1 {
+        font-style: italic;
+        font-weight: 600;
+        font-size: 18em;
+    }
+    #tb9-2 {
+        font-style: normal;
+    }
 
+/*Tooltip*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
 
 

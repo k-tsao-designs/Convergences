@@ -1,6 +1,5 @@
 /*Lark story css*/
-
-/*east-style*/
+.marker {background-color: green;}
 
 .back {
     height: 100%;
@@ -53,15 +52,11 @@
     width: 350px;
     padding: 40px 30px;
     margin: 0;
-    background-color: #A7CAE1;
+    background-color: #A9DFBF;
     opacity: .9;
     position: absolute;
     font-weight: 500;
-    font-size: 1.5em;
-}
-
-.east-link {
-    color: blue;
+    font-size: 1.25em;
 }
 
 /*east1 style*/
