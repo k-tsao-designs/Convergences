@@ -2,7 +2,6 @@ body {
     margin: 0;
     overflow: visible;
     height: 10000px;
-    font-family: 'Cormorant Garamond', serif;
 }
 
 .container {
@@ -47,7 +46,7 @@ p>a {
 .link-img {
     height: 10%;
     width: auto;
-    z-index: 75;
+    z-index: 150;
     position: absolute;
     right: 10%;
     top: 25%;
