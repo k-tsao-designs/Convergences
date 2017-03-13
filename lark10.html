@@ -1,0 +1,130 @@
+<!DOCTYPE HTML> 
+<html> 
+<head>
+
+    <script type="text/javascript" ></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <Link rel="stylesheet" href="css/style.css">
+    <Link rel="stylesheet" href="css/lark-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500" rel="stylesheet">
+    <style>
+        body {height: 10000px;}
+        .holder {width: 10000px;}
+        .larktext9 {height: 60%; top:-5%;}
+        .larktext10b {height: 60%; top:45%;}
+    </style>
+    
+    <script>
+        $("window").scroll(function() {
+            counter=document.body.scrollTop;
+            $("#count").html(counter);
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+
+<!--Marker-->
+    <p style="z-index: 100;" id="count">0000</p>
+
+    <div class="holder" data-0="left:0px" data-10000="left:-10000px">   
+            <div class="marker">
+                <p>1000</p>
+                <p>2000</p>
+                <p>3000</p>
+                <p>4000</p>
+                <p>5000</p>
+                <p>6000</p>
+                <p>7000</p>
+                <p>8000</p>
+                <p>9000</p>
+                <p>10000</p>
+            </div>  
+    </div>
+
+<!--Return to Beginning-->
+    <a href="welcome.html" class="homelink"><div class="home">
+        <h6>home</h6>
+    </div></a>
+    
+<!--Text boxes-->
+    <div class="story" 
+    data-0="left:00%" 
+    data-6000="left: 0%">
+        <div class="text t1">
+            <p>She grew sad because even that had not helped, and she went out into a meadow, and <a href="east14"><span class="east-link tooltip">sat down
+                <span class="tooltiptext">
+                    outside the castle window and began to spin with her golden spinning wheel, and the princess with the long nose wanted to have it as well.
+                </span>
+            </span></a> and cried. </p>
+            <p>While she was sitting there she thought of the egg which the moon had given her. She broke it open, and out came a mother hen with twelve little chicks, all of gold. They ran about peeping, then crept back under the old hen's wings. It was the most beautiful thing to be seen in all the world. Then she got up, and drove them across the meadow before her, until the bride looked out of the window. She liked the little chicks so much that she immediately came down and asked if they were for sale.</p>
+            <!--insert text-block-9b here-->
+            <!--insert text-block-10b here-->
+            <p class="appear"
+            data-4000="opacity:0;"
+            data-5000="opacity:0.5;"
+            data-6000="opacity:1.0"
+            >
+            The bride said <a href="east14"><span class="east-link tooltip">yes,
+                <span class="tooltiptext">
+                    yes, she would be welcome to do that
+                </span>
+            </span></a>intending to cheat her as she had done the previous evening.</p>
+        </div>
+
+    </div>
+
+<!--Expressive text-->
+    <img class="temp-text-block full larktext9" src="img/lark-text-9.jpg"
+    data-0000="left:150%;" 
+    data-2000="left: 33%;"
+    data-4000="left: 33%;">
+
+    <img class="temp-text-block full larktext10b" src="img/lark-text-10b.jpg"
+    data-1000="left:150%;" 
+    data-3000="left: 33%;"
+    data-5000="left: 33%;">
+<!--     <div class="text-block" id="tb9b">
+        <span id="tb9-1">Not for money or property, but for flesh and blood.</span>
+        <span id="tb9-2"></span>
+    </div>
+    <div class="text-block" id="tb10b">
+        <span id="tb10-1">Let me sleep one more night in the room where the bridegroom sleeps.</span>
+        <span id="tb10-2"></span>
+    </div> -->
+    
+<!--Illustrations-->   
+    <div class="illustrations" 
+    data-10000="left:30%;">
+        <div class="fill draw1">
+            <span class="subtitle">negotiation</span>
+        </div>
+    </div>
+
+
+<!--Next Scene-->
+    <a href="lark11.html">
+        <div class="link-img">
+        <img src="img/lark-link.png">
+            <span class="linktext">However, when the prince went to bed he asked his servant</span>
+        </div>
+    </a>
+
+
+</div><!--container-->
+
+    <script src="src/skrollr.js"></script>
+
+    <script type="text/javascript">
+        var s = skrollr.init({
+            render: function(data) {
+            //Debugging - Log the current scroll position.
+            console.log(data.curTop);
+        }
+    });
+        
+    </script>
+    
+</body>
+</html>

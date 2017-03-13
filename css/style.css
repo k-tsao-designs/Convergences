@@ -2,7 +2,6 @@ body {
     margin: 0;
     overflow: visible;
     height: 10000px;
-    font-family: 'Cormorant Garamond', serif;
 }
 
 .container {
@@ -16,12 +15,12 @@ p>a {
 }
 
 @keyframes larklinkhover {
-    from {color: green;}
+    from {color: #1E8449;}
     to {color: #229954;}
 }
 
 .lark-link {
-    color: green;
+    color: #1E8449;
 }
 .lark-link:hover {
     animation-name: larklinkhover;
@@ -31,11 +30,11 @@ p>a {
 }
 
 @keyframes eastlinkhover {
-    from {color: blue;}
+    from {color: #025CE2;}
     to {color: #2874A6;}
 }
 .east-link {
-    color: blue;
+    color: #025CE2;
 }
 .east-link:hover {
     animation-name: eastlinkhover;
@@ -44,13 +43,94 @@ p>a {
     animation-timing-function: ease-in-out;
 }
 
+@keyframes linkimghover {
+    from {height: 10%;}
+    to {height: 11%;}
+}
 .link-img {
     height: 10%;
     width: auto;
-    z-index: 75;
+    z-index: 150;
     position: absolute;
-    right: 10%;
+    right: 20%;
     top: 25%;
+    opacity: 1;
+}
+.link-img img {
+    position: absolute;
+    height: 100%;
+    transition: transform .5s;
+}
+
+.link-img img:hover {
+    transform: scale(1.15);
+}
+
+/* Image link text */
+.linktext {
+    visibility: hidden;
+    width: 300px;
+    background-color: white;
+    color: black;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.25em;
+    padding: 5px 6px;
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    top: 4em;
+    left: -4em;
+    z-index: 125 !important;
+}
+
+/* Show the image link text when you mouse over the tooltip container */
+.link-img:hover .linktext {
+    visibility: visible;
+}
+
+/*Tooltip aka word link*/
+.tooltip {
+    position: relative;
+    display: inline;
+}
+
+/* Word link text */
+.tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: white;
+    color: black;
+    text-align: left;
+    padding: 6px 7px;
+    border-radius: 6px;
+    z-index: 125 !important;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    margin-top: -.2em;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/*Link to Welcome Page*/
+.home {
+    z-index: 200;
+    position: absolute;
+    display: block;
+    left: 2%;
+    top: 0.25%;
+}
+.home h6 {
+    margin-top: 15px;
+    font-size: .85em;
+    font-weight: 700;
+}
+.homelink {
+    text-decoration: none;
+    color: black;
 }
 
 /*Counting the pixel change*/
@@ -67,9 +147,9 @@ p>a {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: blue;
     text-align: right;
     height: 10px;
+    visibility: visible;
 }
 
 .marker p {
@@ -84,3 +164,37 @@ p>a {
     top: 0;
     left: 0;
 }
+
+
+
+.italic {
+    font-style: italic;
+}
+.thin {
+    font-weight: 100;
+}
+.light {
+    font-weight: 300;
+}
+.regular {
+    font-weight: 400;
+}
+.medium {
+    font-weight: 500;
+}
+.semibold {
+    font-weight: 600;
+}
+.bold {
+    font-weight: 700;
+}
+
+
+.appear {
+    opacity: 0;
+    -webkit-transition: all 3s ease-in-out;
+    -moz-transition: all 3s ease-in-out;
+    -o-transition: all 3s ease-in-out;
+    transition: all 3s ease-in-out;
+}
+

@@ -1,0 +1,113 @@
+<!DOCTYPE HTML> 
+<html> 
+<head>
+
+    <script type="text/javascript" ></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <Link rel="stylesheet" href="css/style.css">
+    <Link rel="stylesheet" href="css/east-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet">
+    <style>
+        body {height: 6500px !important;}
+        .holder {width: 6500px;}
+    </style>
+    <script>
+        $("window").scroll(function() {
+            counter=document.body.scrollTop;
+            $("#count").html(counter);
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+
+    <div class="holder" data-0="left:0px" data-10000="left:-6500px">   
+            <div class="marker">
+                <p>1000</p>
+                <p>2000</p>
+                <p>3000</p>
+                <p>4000</p>
+                <p>5000</p>
+                <p>6000</p>
+            </div>  
+    </div>
+
+<!--Return to Beginning-->
+    <a href="welcome.html" class="homelink"><div class="home">
+        <h6>home</h6>
+    </div></a>
+    
+    <div class="back" data-0="left:0px" data-6500="left:-72px">
+        <div class="backgroundcolor"></div>
+<!--         <img class="backgroundimg" src="img/east2.jpg"> -->
+    </div>
+
+<!--Text boxes-->
+    <div class="story" 
+    data-0="left:00%" 
+    data-2000="left: -100%"
+    data-4000="left:-100%"
+    data-10000="left:-200%"
+    data-12000="left:-200%"
+    data-16000="left:-280%"
+    data-18000="left:-280%">
+        <div class="text t1">
+            <p>One day &#x97; it was on a Thursday evening late in the fall &#x97; the weather was wild and rough outside, and it was cruelly dark. The rain was falling and the wind blowing, until the walls of the cottage shook. They were all sitting around the fire busy with this thing and that. Then all at once something gave three taps on the window. The father went out to see what was the matter.</p>
+        </div>
+        <div class="text t2">
+            <p>Outside, what should he see but a great big white bear.</p>
+            <p>&#x93;Good evening to you,&#x94; said the white bear.</p>
+            <p>&#x93;The same to you,&#x94; said the man.</p>
+            <p>&#x93;Will you give me your <a href="lark2.html"><span class="tooltip lark-link">youngest daughter?
+                <span class="tooltiptext">She loves me the most, and always runs to meet me when I return home.</span>
+            </span></a>If you will, I'll make you as rich as you are now poor,&#x94; said the bear.</p>
+
+        </div>
+        <div class="text t3">
+            <p>Well, the man would not be at all sorry to be so rich; but still he thought he must have a bit of a talk with his daughter first; so he went in and told them how there was a great white bear waiting outside, who had given his word to make them so rich if he could only have the youngest daughter.</p>
+            <p>The girl said &#x93;No!&#x94; outright. Nothing could get her to say anything else; so the man went out and settled it with the white bear, that he should come again the next Thursday evening and get an answer. </p>
+            <p>Meantime he talked to his daughter, and kept on telling her of all the riches they would get, and how well off she herself would be. At last she agreed to it, so she washed and mended her rags, and made herself as smart as she could. Soon she was ready for the trip, for she didn't have much to take along.</p>
+        </div>
+    </div>
+    
+ <!--Illustrations-->   
+    <div class="illustrations" 
+    data-0="left:30%;" 
+    data-2000="left:-70%;"
+    data-4000="left:-70%;"
+    data-10000="left:-170%;"
+    data-12000="left:-170%;">
+        <div class="fill draw1">
+            <span class="subtitle">father with lantern</span>
+        </div>
+        <div class="fill draw2">
+            <img src="img/ink/bear-ask.png" class="ink ink1">
+            <span class="subtitle">father is shocked, bear looming</span>
+        </div>
+    </div>
+
+<!--Next Scene-->
+    <a href="east3.html">
+        <div class="link-img">
+        <img src="img/east-link.png">
+            <span class="linktext">The next Thursday evening...</span>
+        </div>
+    </a>
+
+</div><!--container-->
+
+    <script src="src/skrollr.js"></script>
+
+    <script type="text/javascript">
+        var s = skrollr.init({
+            render: function(data) {
+            //Debugging - Log the current scroll position.
+            console.log(data.curTop);
+        }
+    });
+        
+    </script>
+    
+</body>
+</html>

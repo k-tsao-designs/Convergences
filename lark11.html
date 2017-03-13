@@ -1,0 +1,112 @@
+<!DOCTYPE HTML> 
+<html> 
+<head>
+
+    <script type="text/javascript" ></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <Link rel="stylesheet" href="css/style.css">
+    <Link rel="stylesheet" href="css/lark-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500" rel="stylesheet">
+    <style>
+        body {height: 6000px;}
+        .holder {width: 6000px;}
+    </style>
+    
+    <script>
+        $("window").scroll(function() {
+            counter=document.body.scrollTop;
+            $("#count").html(counter);
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+
+<!--Marker-->
+    <p style="z-index: 100;" id="count">0000</p>
+
+    <div class="holder" data-0="left:0px" data-6000="left:-6000px">   
+            <div class="marker">
+                <p>1000</p>
+                <p>2000</p>
+                <p>3000</p>
+                <p>4000</p>
+                <p>5000</p>
+                <p>6000</p>
+            </div>  
+    </div>
+
+<!--Return to Beginning-->
+    <a href="welcome.html" class="homelink"><div class="home">
+        <h6>home</h6>
+    </div></a>
+    
+
+<!--Text boxes-->
+    <div class="story" 
+    data-0="left:70%" 
+    data-2000="left: 0%">
+        <div class="text t1">
+            <p>However, when the prince went to bed he asked his servant what the murmuring and rustling in the night had been. Then the servant told him everything — that he had been forced to give him a sleeping-potion because a poor girl secretly had slept in his room, and that he was supposed to give him another <a href="east15.html"><span class="east-link tooltip">sleeping potion
+                <span class="tooltiptext">
+                    The prince pretended to drink it, but threw it over his shoulder.
+                </span>
+            </span></a> tonight.</p>
+            <p>The prince said, &#x93;Pour the drink out next to the bed.&#x94;</p>
+        </div>
+        <div class="text t2"
+        data-2000="left: 100%"
+        data-4000="left: 000%">
+            <p>That night she was again led in, and when she began to relate how sadly she had fared, he immediately recognized his dear wife by her voice, jumped up and cried,</p>
+            <!--insert text-block-12 here-->
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <p>&#x93;It is as if I had been in a dream, for the strange princess has bewitched me, causing me to forget you. But God has removed the spell from me just in time.&#x94;</p>
+        </div>
+
+    </div>
+
+<!--Expressive text-->
+    <img class="temp-text-block embed" src="img/lark-text-12.jpg"
+    data-2000="left:100%; top:28%;" 
+    data-4000="left: 15%; top:28%;"
+    data-6000="left: 15%; top:28%;">
+<!--     <div class="text-block" id="tb12">
+        <span id="tb12-1">Now I am redeemed</span>
+        <span id="tb12-2"></span>
+    </div> -->
+
+<!--Illustrations-->   
+    <div class="illustrations" 
+    data-0="left:100%;" 
+    data-2000="left:30%;">
+        <div class="fill draw1">
+            <span class="subtitle">bedside</span>
+        </div>
+    </div>
+
+<!--Next Scene-->
+    <a href="lark12.html">
+        <div class="link-img">
+        <img src="img/lark-link.png">
+            <span class="linktext">Then they both left the castle secretly in the night</span>
+        </div>
+    </a>
+
+
+</div><!--container-->
+
+    <script src="src/skrollr.js"></script>
+
+    <script type="text/javascript">
+        var s = skrollr.init({
+            render: function(data) {
+            //Debugging - Log the current scroll position.
+            console.log(data.curTop);
+        }
+    });
+        
+    </script>
+    
+</body>
+</html>

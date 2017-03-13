@@ -1,0 +1,111 @@
+<!DOCTYPE HTML> 
+<html> 
+<head>
+
+    <script type="text/javascript" ></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <Link rel="stylesheet" href="css/style.css">
+    <Link rel="stylesheet" href="css/lark-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500" rel="stylesheet">
+    <style>
+        body {height: 10000px !important;}
+        .holder {width: 10000px;}
+        .embed {height: 40%;}
+    </style>
+    
+    <script>
+        $("window").scroll(function() {
+            counter=document.body.scrollTop;
+            $("#count").html(counter);
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+
+<!--Marker-->
+    <p style="z-index: 100;" id="count">0000</p>
+
+    <div class="holder" data-0="left:0px" data-10000="left:-8560px">   
+            <div class="marker">
+                <p>1000</p>
+                <p>2000</p>
+                <p>3000</p>
+                <p>4000</p>
+                <p>5000</p>
+                <p>6000</p>
+                <p>7000</p>
+                <p>8000</p>
+                <p>9000</p>
+                <p>10000</p>
+            </div>  
+    </div>
+
+<!--Return to Beginning-->
+    <a href="welcome.html" class="homelink"><div class="home">
+        <h6>home</h6>
+    </div></a>
+    
+    <div class="back" data-0="left:0px" data-10000="left:-72px">
+        <div class="backgroundcolor"></div>
+<!--         <img class="backgroundimg" src="img/cottage-outside.jpg"> -->
+    </div>
+
+<!--Text boxes-->
+    <div class="story" 
+    data-0="left:70%" 
+    data-2000="left: 0%">
+        <div class="text t1">
+            <p>When he reached home and entered his house, the first one who met him was none other than his youngest and dearest daughter. She came running up, kissed and hugged him, and when she saw that he had brought with him a singing, springing lark, she was beside herself with joy.</p>
+            <p>The father, however, could not be glad, but instead began to cry, saying:
+        </div>
+        <div class="text t2"
+        data-6000="left:100%;"
+        data-8000="left:70%;">
+            <p>&#x93;To get it I had to promise you to a wild lion, and when he has you he will tear you to pieces and eat you up.&#x94; Then he told her everything that had happened, and begged her not to go there, come what may.</p>
+            <p>But she consoled him, saying, &#x93;Dearest father, your promise must be kept. I will go there and appease the lion, so that I can return safely to you.&#x94;</p>
+        </div>
+    </div>
+
+<!--Expressive text-->
+    <img class="temp-text-block embed" src="img/lark-text-2.jpg"
+    data-2000="left:150%; top:50%;" 
+    data-4000="left: 15%; top:50%;"
+    data-6000="left: 15%; top:50%;">
+<!--     <div class="text-block" id="tb2">
+        <span class="tb2-1">My dearest child</span>
+        <span class="tb2-2">I paid</span>
+        <span class="tb2-3">dearly</span>
+        <span class="tb2-4">for that</span>
+        <span class="tb2-5">little bird</span>
+    </div> -->
+    
+<!--Illustrations-->   
+
+
+<!--Next Scene-->
+    <a href="lark4.html">
+        <div class="link-img">
+        <img src="img/lark-link.png">
+            <span class="linktext">The next morning she had the way pointed out to her, took leave, and in good spirits walked into the woods.</span>
+        </div>
+    </a>
+
+
+</div><!--container-->
+
+    <script src="src/skrollr.js"></script>
+
+    <script type="text/javascript">
+        var s = skrollr.init({
+            render: function(data) {
+            //Debugging - Log the current scroll position.
+            console.log(data.curTop);
+        }
+    });
+        
+    </script>
+    
+</body>
+</html>
