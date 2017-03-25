@@ -1,0 +1,158 @@
+<!DOCTYPE HTML> 
+<html> 
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/convergences.js"></script>
+
+    <Link rel="stylesheet" href="css/style.css">
+    <Link rel="stylesheet" href="css/lark-style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600,600i,700" rel="stylesheet">
+    
+    <style>
+        body {height: 12000px;}
+        .holder {width: 12000px;}
+        .draw2 {left:35%;}
+        .draw3 {left:70%;}
+        .draw4 {left:100%;}
+        .t3 {left:130%;}
+    </style>
+    
+    <script>
+        $("window").scroll(function() {
+            counter=document.body.scrollTop;
+            $("#count").html(counter);
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+
+<!--Marker-->
+    <p style="z-index: 100;" id="count">0000</p>
+
+    <div class="holder" data-0="left:0px" data-12000="left:-12000px">   
+            <div class="marker">
+                <p>1000</p>
+                <p>2000</p>
+                <p>3000</p>
+                <p>4000</p>
+                <p>5000</p>
+                <p>6000</p>
+                <p>7000</p>
+                <p>8000</p>
+                <p>9000</p>
+                <p>10000</p>
+                <p>11000</p>
+                <p>12000</p>
+            </div>  
+    </div>
+
+<!--Navigation-->
+    <a href="lark1.html" class="homelink"><div class="home">
+        <h6>home</h6>
+    </div></a>
+
+    <div class="storyline-btn">
+        <img src="img/storyline/storyline-btn.png">
+        <div class="storyline">
+            <img src="img/storyline/lark8.png">
+        </div>
+    </div>
+    
+<!--Backgrounds-->
+    <div class="back" data-0="left:0px" data-10000="left:-72px">
+        <div class="backgroundcolor"></div>
+    <!-- <img class="backgroundimg" src="img/cottage-outside.jpg"> -->
+    </div>
+
+<!--Text boxes-->
+    <div class="story" 
+    data-0="left:100%" 
+    data-2000="left: 70%"
+    data-6000="left: 70%"
+    data-8000="left: -30%"
+    data-10000="left:-30%"
+    data-12000="left: -60%"
+    >
+        <div class="text t1">
+            <p>The east wind and the west wind came, and had seen nothing, but the south wind said, &#x93;I have seen the white dove. It has flown to the Red Sea. There it has become a lion again, for the seven years are over, and the lion is fighting there with a serpent. However, the serpent is an enchanted princess.&#x94;</p>
+        </div>
+        <div class="text t2">
+            <p>Then the night wind said to her, &#x93;I will give you some advice. Go to the Red Sea. On the right bank are some tall reeds. Count them, cut off the eleventh one, and strike the serpent with it. Then the lion will be able to subdue it, and both will then regain their human bodies. After that look around and you will see the griffin which lives near the Red Sea. Climb onto its back with your beloved, and the bird will carry you home across the sea. Here is a nut for you. When you are above the middle of the sea, drop the nut. It will immediately sprout upward, and a tall nut tree will grow out of the water, upon which the griffin can rest. If it were not able to rest, it would not be strong enough to carry you across. If you forget to drop the nut, it will let the two of you fall into the sea.&#x94;</p>
+        </div>
+        <div class="text t3">
+            <p>Then she went there, and found everything just as the night wind had said. She counted the reeds by the sea, cut off the eleventh one, struck the serpent with it, and the lion subdued it. Immediately they both regained their human bodies. However, when the princess who had been a serpent was free from the enchantment, she took the youth by the arm, mounted the griffin, and carried him away with her.</p>
+        </div>
+
+    </div>
+    
+<!--Illustrations-->  
+    <div class="illustrations illustration-overlap"
+    data-6000="left:0%;"
+    data-8000="left:-100%;">
+        <div class="half draw1 overlap1">
+            <img class="ink" src="img/ink/girl_asks_help.png">
+            <!-- <span class="subtitle">girl begs help</span> -->
+        </div>
+        <div class="fill draw4">
+            <img class="ink" src="img/ink/northwind.png">
+            <!-- <span class="subtitle">night wind</span> -->
+        </div>
+    </div>
+
+    <div class="illustrations" 
+    data-0="left:100%;" 
+    data-2000="left:30%;"
+    data-3000="left:00%;"
+    data-4000="left:-30%;"
+    data-6000="left:-30%;"
+    data-8000="left:-70%;"
+    data-10000="left:-100%;">
+        <div class="half draw1">
+            <img class="ink" src="img/ink/eastwind.png">
+            <!-- <span class="subtitle">east wind</span> -->
+        </div>
+        <div class="half draw2">
+            <img class="ink" src="img/ink/westwind.png">
+            <!-- <span class="subtitle">west wind</span> -->
+        </div>
+        <div class="half draw3">
+            <img class="ink" src="img/ink/southwind.png">
+            <!-- <span class="subtitle">south wind</span> -->
+        </div>
+    </div>
+
+
+<!--Next Scene-->
+    <a href="lark9.html">
+        <div class="link-img"
+        data-11000="top: 15%; left:-6%"
+        data-11200="top: 40%; left:8%"
+        data-11400="top: 85%; left:20%"
+        data-11600="top: 80%; left:55%"
+        data-11800="top: 70%; left:75%"
+        data-12000="top: 60%; left:85%"
+        data-12200="top: 75%; left:100%">
+        <img src="img/lark-link-R.png">
+            <span class="linktext">There stood the poor girl who had wandered so far and was forsaken again.</span>
+        </div>
+    </a>
+
+
+</div><!--container-->
+
+    <script src="src/skrollr.js"></script>
+
+    <script type="text/javascript">
+        var s = skrollr.init({
+            render: function(data) {
+            //Debugging - Log the current scroll position.
+            console.log(data.curTop);
+        }
+    });
+        
+    </script>
+    
+</body>
+</html>

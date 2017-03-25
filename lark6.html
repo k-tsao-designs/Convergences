@@ -1,0 +1,133 @@
+<!DOCTYPE HTML> 
+<html> 
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/convergences.js"></script>
+
+    <Link rel="stylesheet" href="css/style.css">
+    <Link rel="stylesheet" href="css/lark-style.css">
+        
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600,600i,700" rel="stylesheet">
+
+    <style>
+        body {height: 8000px;}
+        .holder {width: 8000px;}
+    </style>
+    
+    <script>
+        $("window").scroll(function() {
+            counter=document.body.scrollTop;
+            $("#count").html(counter);
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+
+<!--Marker-->
+    <p style="z-index: 100;" id="count">0000</p>
+
+    <div class="holder" data-0="left:0px" data-8000="left:-8000px">   
+            <div class="marker">
+                <p>1000</p>
+                <p>2000</p>
+                <p>3000</p>
+                <p>4000</p>
+                <p>5000</p>
+                <p>6000</p>
+                <p>7000</p>
+                <p>8000</p>
+            </div>  
+    </div>
+
+<!--Navigation-->
+    <a href="lark1.html" class="homelink"><div class="home">
+        <h6>home</h6>
+    </div></a>
+
+    <div class="storyline-btn">
+        <img src="img/storyline/storyline-btn.png">
+        <div class="storyline">
+            <img src="img/storyline/lark6.png">
+        </div>
+    </div>
+    
+<!--Backgrounds-->
+    <div class="back" data-0="left:0px" data-10000="left:-72px">
+        <div class="backgroundcolor"></div>
+    </div>
+
+<!--Text boxes-->
+    <div class="story" 
+    data-0="left:70%" 
+    data-2000="left: 0%"
+    data-6000="left: 0%"
+    data-8000="left:-30%">
+        <div class="text t1">
+            <p>She had a room built there, so strong and thick that no ray of light could penetrate it. He was to sit inside it when the wedding lights were lit. However, the door was made of green wood which split, leaving a little crack that no one noticed.</p>
+            <p>The wedding was celebrated with splendor, but when the procession returning from the church with all its torches and lights passed by this room, a ray of <a href="east6.html"><span class="east-link tooltip">light
+                <span class="tooltiptext">
+                    shone on him, and she saw that he was the most handsome prince one ever set eyes on
+                </span>
+            </span></a> no wider than a hair touched the prince, and he was transformed in an instant. And when she came in looking for him, she did not see him, but a white dove was sitting there.</p>
+            <p>The dove said to her,</p>
+            <!--insert text-block-4-->
+        </div>
+        <div class="text t2">
+            <p>Then the dove flew out the door, and she followed him, and every seven steps a drop of red blood and a little white feather fell down showing her the way. Thus she went further and further into the wide world. She neither looked aside nor rested. When the seven years were almost past, she rejoiced, thinking that they would soon be redeemed, but they were far from it.</p>
+            <p>One day when she was thus walking onward, no little feather and no drop of red blood fell, and when she raised her eyes the dove had disappeared.</p>
+        </div>
+    </div>
+
+<!--Expressive text-->
+    <img class="temp-text-block full" src="img/lark-text-4.jpg"
+    data-2000="left:150%; top:10%;" 
+    data-4000="left: 40%; top:10%;"
+    data-6000="left: 40%; top:10%"
+    data-8000="left: 9%; top:10%">
+<!--     <div class="text-block" id="tb4">
+        <span id="tb4-1">For seven years I must fly about into the world. Every seven steps I will let fall a drop of red blood and a white feather. These will show you the way, and if you follow this trail you can redeem me.</span>
+        <span id="tb4-2"></span>
+        <span id="tb4-3"></span>
+        <span id="tb4-4"></span>
+    </div> -->
+
+
+<!--Next Scene-->
+    <a href="lark7.html">
+        <div class="link-img"
+        data-000="top: -10%;right: 40%;"
+        data-500="top: 31%;right:72%;"
+        data-1000="top: 50%;right: 85%;"
+        data-1500="top: 76%;right: 96%;"
+        data-2000="top: 80%;right:95%;"
+        data-2300="top: 79%;right:93%;"
+        data-3000="top: 62%;right: 65%;"
+        data-4000="top: 5.5%;right:56%;"
+        data-4600="top: 4%;right:40%;"
+        data-5000="top: 10%;right:30%;"
+        data-6000="top: 22%;right:17%;"
+        data-7000="top: 72%;right: 17%;"
+        data-8000="top: 90%;right:-10%;">
+        <img src="img/lark-link-R.png">
+            <span class="linktext">Then she thought, &#x93;Humans cannot help you now,&#x94;</span>
+        </div>
+    </a>
+
+
+</div><!--container-->
+
+    <script src="src/skrollr.js"></script>
+
+    <script type="text/javascript">
+        var s = skrollr.init({
+            render: function(data) {
+            //Debugging - Log the current scroll position.
+            console.log(data.curTop);
+        }
+    });
+        
+    </script>
+    
+</body>
+</html>

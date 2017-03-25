@@ -1,0 +1,110 @@
+<!DOCTYPE HTML> 
+<html> 
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/convergences.js"></script>
+
+    <Link rel="stylesheet" href="css/style.css">
+    <Link rel="stylesheet" href="css/east-style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500,500i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet">
+    <style>
+        body {height: 5000px;}
+        .holder {width: 5000px;}
+        .ink1 {float: left;}
+        .ink2 {padding-right: 29%;}
+    </style>
+    
+</head>
+<body>
+<div class="container">
+
+<!--Marker-->
+    <p style="z-index: 100;" id="count">0000</p>
+
+    <div class="holder" data-0="left:0px" data-5000="left:-5000px">   
+            <div class="marker">
+                <p>1000</p>
+                <p>2000</p>
+                <p>3000</p>
+                <p>4000</p>
+                <p>5000</p>
+                <p>6000</p>
+            </div>  
+    </div>
+
+<!--Navigation-->
+    <a href="east1.html" class="homelink"><div class="home">
+        <h6>home</h6>
+    </div></a>
+
+    <div class="storyline-btn">
+        <img src="img/storyline/storyline-btn.png">
+        <div class="storyline">
+            <img src="img/storyline/east9.png">
+        </div>
+    </div>
+    
+<!--Backgrounds-->
+    <div class="back" data-0="left:0px" data-5000="left:-72px">
+        <div class="backgroundcolor"></div>
+<!--         <img class="backgroundimg" src="img/east9.jpg"> -->
+    </div>
+
+<!--Text boxes-->
+    <div class="story" 
+    data-0="left:0%" 
+    data-3000="left:-30%"
+    data-5000="left:-30%">
+        <div class="text t1">
+            <p>At last she came to another great cliff, under which sat another old woman, spinning with a golden spinning wheel. She asked her, as well, if she knew the way to the prince, and where the castle was that lay east of the sun and west of the moon. But it was the same thing over again.</p>
+            <p>&#x93;Perhaps you are the one who should have had the prince?"&#x94; said the old woman.</p>
+            <p>Yes, that she was.</p>
+        </div>
+        <div class="text t2">
+            <p>But she didn't know the way any better than the other two. She knew it was east of the sun and west of the moon, but that was all.</p>
+            <p>&#x93;And you'll get there too late or never; but I'll lend you my horse, and then I think you'd best ride to the east wind and ask him; maybe he knows his way around those parts, and can blow you there. When you get to him, just give the horse a switch under the left ear, and he'll trot home by himself.&#x94;</p>
+            <p>She too gave the girl her golden spinning wheel. &#x93;Maybe you'll find a use for it,&#x94; said the old woman.</p>
+        </div>
+    </div>
+
+    
+ <!--Illustrations-->   
+    <div class="illustrations" 
+    data-000="left:29.5%;"
+    data-3000="left:-30%;"
+    data-5000="left:-30%;">
+        <div class="split draw1">
+            <img class="ink ink1" src="img/ink/riding_horse.png">
+            <img src="img/ink/oldwoman.png" class="ink ink2">
+            <!-- <span class="subtitle">riding horse...............................................................................old woman</span> -->
+        </div>
+    </div>
+
+
+<!--Next Scene-->
+    <a href="east10.html">
+        <div class="link-img">
+        <img src="img/east-link.png">
+            <span class="linktext">She rode many weary days</span>
+        </div>
+    </a>
+
+
+</div><!--container-->
+
+    <script src="src/skrollr.js"></script>
+
+    <script type="text/javascript">
+        var s = skrollr.init({
+            render: function(data) {
+            //Debugging - Log the current scroll position.
+            console.log(data.curTop);
+        }
+    });
+        
+    </script>
+    
+</body>
+</html>

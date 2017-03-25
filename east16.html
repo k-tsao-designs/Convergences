@@ -1,0 +1,100 @@
+<!DOCTYPE HTML> 
+<html> 
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/convergences.js"></script>
+
+    <Link rel="stylesheet" href="css/style.css">
+    <Link rel="stylesheet" href="css/east-style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500,500i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet">
+    <style>
+        body {height: 8000px;}
+        .holder {width: 8000px;}
+    </style>
+    
+</head>
+<body>
+<div class="container">
+
+<!--Marker-->
+    <p style="z-index: 100;" id="count">0000</p>
+
+    <div class="holder" data-0="left:0px" data-8000="left:-8000px">   
+            <div class="marker">
+                <p>1000</p>
+                <p>2000</p>
+                <p>3000</p>
+                <p>4000</p>
+                <p>5000</p>
+                <p>6000</p>
+                <p>7000</p>
+                <p>8000</p>
+            </div>  
+    </div>
+
+<!--Navigation-->
+    <a href="east1.html" class="homelink"><div class="home">
+        <h6>home</h6>
+    </div></a>
+
+    <div class="storyline-btn">
+        <img src="img/storyline/storyline-btn.png">
+        <div class="storyline">
+            <img src="img/storyline/east16.png">
+        </div>
+    </div>
+    
+<!--Backgrounds-->
+    <div class="back" data-0="left:0px" data-8000="left:-72px">
+        <div class="backgroundcolor"></div>
+    </div>
+
+<!--Text boxes-->
+    <div class="story">
+        <div class="text t1">
+            <p>At that the old troll woman flew into such a rage, she exploded on the spot, and the princess with the long nose after her, and the whole pack of trolls after her &#x97; at least I've never heard a word about them since.</p>
+            <p>As for the prince and princess, they set free all the poor Christians who had been captured and shut up there; and they took with them all the silver and gold, and flew away as far as they could from the <a href="lark13.html"><span class="lark-link tooltip">castle
+                <span class="tooltiptext">
+                    They both left the castle secretly in the night...
+                </span>
+            </span></a> that lay east of the sun and west of the moon.</p>
+        </div>
+    </div>
+    
+<!--Illustrations-->   
+    <div class="illustrations" 
+    data-0="left:130%;" 
+    data-4000="left:30%;">
+        <div class="fill draw1">
+            <span class="subtitle">The End.</span>
+        </div>
+    </div>
+
+
+<!--Next Scene-->
+    <a href="welcome.html">
+        <div class="link-img">
+        <img src="img/east-link.png">
+            <span class="linktext">Back to all stories</span>
+        </div>
+    </a>
+
+
+</div><!--container-->
+
+    <script src="src/skrollr.js"></script>
+
+    <script type="text/javascript">
+        var s = skrollr.init({
+            render: function(data) {
+            //Debugging - Log the current scroll position.
+            console.log(data.curTop);
+        }
+    });
+        
+    </script>
+    
+</body>
+</html>

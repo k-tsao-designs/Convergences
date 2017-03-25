@@ -1,0 +1,165 @@
+<!DOCTYPE HTML> 
+<html> 
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+   
+
+    <Link rel="stylesheet" href="css/style.css">
+    <Link rel="stylesheet" href="css/lark-style.css">
+        
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600,600i,700" rel="stylesheet">
+
+    <style>
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            margin-top: -6px;
+        }
+
+        /* Tooltip text */
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 400px;
+            background-color: white;
+            color: black;
+            text-align: left;
+            padding: 5px 6px;
+            border-radius: 6px;
+            margin-top: -.2em;
+            z-index: 125 !important;
+            /* Position the tooltip text - see examples below! */
+            position: absolute;
+            z-index: 1;
+        }
+    </style>
+    
+
+</head>
+<body>
+<div class="container">
+
+<!--Marker-->
+    <p style="z-index: 100;" id="count">0000</p>
+
+    <div class="holder" data-0="left:0px" data-10000="left:-10000px">   
+            <div class="marker">
+                <p>1000</p>
+                <p>2000</p>
+                <p>3000</p>
+                <p>4000</p>
+                <p>5000</p>
+                <p>6000</p>
+                <p>7000</p>
+                <p>8000</p>
+                <p>9000</p>
+                <p>10000</p>
+            </div>  
+    </div>
+
+<!--Navigation-->
+    <a href="lark1.html" class="homelink"><div class="home">
+        <h6>home</h6>
+    </div></a>
+
+    <div class="storyline-btn">
+        <img src="img/storyline/storyline-btn.png">
+        <div class="storyline">
+            <img src="img/storyline/lark2.png">
+        </div>
+    </div>
+    
+<!--Backgrounds-->
+    <div class="back" data-0="left:0px" data-10000="left:-72px">
+        <div class="backgroundcolor"></div>
+<!--         <img class="backgroundimg" src="img/cottage-outside.jpg"> -->
+    </div>
+
+<!--Text boxes-->
+    <div class="story"
+    data-0000="left:0%" 
+    data-4000="left:0%;"
+    data-6000="left:-100%">
+        <div class="text t1">
+            <p>Now when the time had come for him to return home, he had bought pearls and diamonds for the two oldest ones, but he had searched everywhere in vain for a singing, springing lark for the youngest one. This made him very sad, for she was his favorite child.</p>
+            <p>His path led him through a forest, in the middle of which there was a splendid castle. Near the castle there stood a tree, and at the very top of the tree he saw a singing, springing lark.</p>
+        </div>
+    </div>
+
+    <div class="story" 
+    data-2000="left:100%" 
+    data-4000="left: 0%"
+    data-8000="left: 0%"
+    data-10000="left: -30%"
+    data-12000="left: -30%">
+        <div class="text t1">
+            <p>&#x93;Aha, you are just what I have been looking for,&#x94; he said happily, then told his servant to climb up and catch the little creature.</p>
+            <p>But as he approached the tree, a lion jumped up from beneath it, shook himself, and roared until the leaves on the trees trembled. &#x93;I will eat up anyone who tries to steal my singing, springing lark!&#x94; he cried.</p>
+            <p>The man said, &#x93;I did not know that the bird belongs to you. I will make amends for my wrong and ransom myself with a large sum of money. Just spare my life.&#x94;</p>
+        </div>
+        <div class="text t2" id="youngestdaughter">
+            <p>The lion said, &#x93;Nothing can save you unless you will promise to give me that which first meets you upon your arrival at home. If you will do that, I will grant you your life, and you shall have the bird for your daughter as well.&#x94;</p>
+            <p>The man hesitated, saying, &#x93;That could be my <a href="east2#youngestdaughter.html"><span class="east-link tooltip">youngest daughter.
+                <span class="tooltiptext">
+                    &#x93;Will you give me your youngest daughter?&#x94;
+                </span>
+            </span></a> She loves me the most, and always runs to meet me when I return home.&#x94;</p>
+            <p>The servant, however, was frightened and said, &#x93;Why must it be your daughter that meets you? It could also be a cat or a dog.&#x94;</p>
+            <p>Then the man let himself be persuaded, took the singing, springing lark, and promised to give the lion whatever should first meet him at home.</p>
+        </div>
+    </div>
+    
+<!--Illustrations-->  
+    <div class="illustrations" 
+    data-2000="left:130%;" 
+    data-4000="left:30%;"
+    data-6000="left:30%;"
+    data-8000="left:-100%">
+        <div class="fill draw1">
+            <img class="ink ink1" src="img/ink/lion_threatens.png">
+            <!-- <span class="subtitle">lion threatens</span> -->
+        </div>
+    </div>
+
+    <div class="illustrations" 
+    data-4000="left:130%;" 
+    data-6000="left:30%;"
+    data-8000="left:30%;"
+    data-10000="left:0%;">
+        <div class="fill draw1">
+            <img class="ink ink2" src="img/ink/lion_negotiates.png">
+            <!-- <span class="subtitle">lion negotiates</span> -->
+        </div>
+    </div>
+
+<!--Next Scene-->
+    <a href="lark3.html">
+        <div class="link-img"
+        data-9300="top: -15%;right:23%;"
+        data-9600="top: 50%;right:49%;"
+        data-9800="top: 66%;right:45%;"
+        data-10000="top: 74%;right: 35%;">
+        <img src="img/lark-link-L.png">
+            <span class="linktext">When he reached home and entered his house, the first one who met him was none other than...</span>
+        </div>
+    </a>
+
+
+</div><!--container-->
+
+    <script src="src/skrollr.js"></script>
+
+    <script type="text/javascript">
+        var s = skrollr.init({
+            render: function(data) {
+            //Debugging - Log the current scroll position.
+            console.log(data.curTop);
+
+        }
+    });
+        
+    </script>
+
+     <script type="text/javascript" src="js/convergences.js"></script>
+    
+</body>
+</html>

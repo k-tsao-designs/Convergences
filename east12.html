@@ -1,0 +1,141 @@
+<!DOCTYPE HTML> 
+<html> 
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/convergences.js"></script>
+
+    <Link rel="stylesheet" href="css/style.css">
+    <Link rel="stylesheet" href="css/east-style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500,500i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet">
+    <style>
+        body {height: 10000px;}
+        .holder {width: 10000px;}
+        .t3 {left: 170%;}
+    </style>
+    
+</head>
+<body>
+<div class="container">
+
+<!--Marker-->
+    <p style="z-index: 100;" id="count">0000</p>
+
+    <div class="holder" data-0="left:0px" data-10000="left:-8560px">   
+            <div class="marker">
+                <p>1000</p>
+                <p>2000</p>
+                <p>3000</p>
+                <p>4000</p>
+                <p>5000</p>
+                <p>6000</p>
+                <p>7000</p>
+                <p>8000</p>
+                <p>9000</p>
+                <p>10000</p>
+            </div>  
+    </div>
+
+<!--Navigation-->
+    <a href="east1.html" class="homelink"><div class="home">
+        <h6>home</h6>
+    </div></a>
+
+    <div class="storyline-btn">
+        <img src="img/storyline/storyline-btn.png">
+        <div class="storyline">
+            <img src="img/storyline/east12.png">
+        </div>
+    </div>
+    
+<!--Backgrounds-->
+    <div class="back" data-0="left:0px" data-10000="left:-72px">
+        <div class="backgroundcolor"></div>
+<!--         <img class="backgroundimg" src="img/east12.jpg"> -->
+    </div>
+
+<!--Text boxes-->
+    <div class="story" 
+    data-0="left:70%"
+    data-2000="left:70%"
+    data-4000="left:0" 
+    data-6000="left:0%"
+    data-8000="left:0%"
+    data-10000="left:-100%"
+    data-12000="left:-100%">
+        <div class="text t1">
+            <p>The next morning the girl sat down under the castle window, and began to play with the golden apple. The first person she saw was the long-nosed princess who was to have the prince.</p>
+            <p>&#x93;What do you want for your golden apple, you girl?&#x94; said the long-nosed one, as she opened the window.</p>
+        </div>
+        <!--insert text-block-6 here-->
+        <div class="text t2"
+        data-4000="left:100%;"
+        data-6000="left:70%;"
+        data-8000="left:70%;">
+            <p>&#x93;If it's not for <a href="lark10.html"><span class="lark-link tooltip">sale
+                <span class="tooltiptext">
+                    It's not for sale for money or property, but for flesh and blood. 
+                </span>
+            </span></a> for gold or money, what is it that you will sell it for? You may name your own price,&#x94; said the princess.</p>
+            <p>&#x93;Well, you can have it, if I may get to the prince, who lives here, and be with him tonight,&#x94; said the girl whom the north wind had brought.</p>
+            <p>Yes, that could be done.</p>
+        </div>
+        <div class="text t3">
+            <p>So the princess took the golden apple; but when the girl came up to the prince's bedroom that night, he was fast asleep. She called him and shook him, and cried and grieved, but she could not wake him up. The next morning. as soon as day broke, the princess with the long nose came and drove her out.</p>
+        </div>
+
+    </div>
+
+<!--Expressive text-->
+    <img class="temp-text-block embed" src="img/east-text-6.jpg"
+    data-2000="left:100%; top:45%;" 
+    data-4000="left: 15%; top:45%;"
+    data-8000="left: 15%; top:45%"
+    data-10000="left:-115%; top:45%">
+<!--     <div class="text-block" id="tb6">
+        <span id="tb6-1">It's not for sale, for gold or money.</span>
+        <span id="tb6-2"></span>
+    </div> -->
+    
+ <!--Illustrations-->   
+    <div class="illustrations" 
+    data-0="left:0;"
+    data-8000="left:0%;"
+    data-10000="left:-100%;"
+    data-12000="left:-100%;">
+        <div class="fill draw1">
+            <img src="img/ink/girl-negotiation.png" class="ink ink1">
+            <!-- <span class="subtitle">negotiation</span> -->
+        </div>
+        <div class="fill draw2">
+            <img src="img/ink/ink-bedside.png" class="ink ink2">
+            <!-- <span class="subtitle">bedside</span> -->
+        </div>
+    </div>
+
+<!--Next Scene-->
+    <a href="east13.html">
+        <div class="link-img">
+        <img src="img/east-link.png">
+            <span class="linktext">That day she sat down under the castle windows and began to card</span>
+        </div>
+    </a>
+
+
+</div><!--container-->
+
+    <script src="src/skrollr.js"></script>
+
+    <script type="text/javascript">
+        var s = skrollr.init({
+            render: function(data) {
+            //Debugging - Log the current scroll position.
+            console.log(data.curTop);
+        }
+    });
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE HTML> 
+<html> 
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/convergences.js"></script>
+    
+    <Link rel="stylesheet" href="css/style.css">
+    <Link rel="stylesheet" href="css/east-style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500,500i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet">
+    <style>
+        body {height: 5000px;}
+        .holder {width: 5000px;}
+        .ink1 {float: left;}
+        .ink2 {padding-right: 23%;}
+    </style>
+    
+</head>
+<body>
+<div class="container">
+
+<!--Marker-->
+    <p style="z-index: 100;" id="count">0000</p>
+
+    <div class="holder" data-0="left:0px" data-5000="left:-5000px">   
+            <div class="marker">
+                <p>1000</p>
+                <p>2000</p>
+                <p>3000</p>
+                <p>4000</p>
+                <p>5000</p>
+            </div>  
+    </div>
+
+<!--Navigation-->
+    <a href="east1.html" class="homelink"><div class="home">
+        <h6>home</h6>
+    </div></a>
+
+    <div class="storyline-btn">
+        <img src="img/storyline/storyline-btn.png">
+        <div class="storyline">
+            <img src="img/storyline/east8.png">
+        </div>
+    </div>
+    
+<!--Backgrounds-->
+    <div class="back" data-0="left:0px" data-5000="left:-72px">
+        <div class="backgroundcolor"></div>
+<!--         <img class="backgroundimg" src="img/east8.jpg"> -->
+    </div>
+
+<!--Text boxes-->
+    <div class="story"  
+    data-0="left:0%" 
+    data-3000="left:-30%"
+    data-5000="left:-30%">
+        <div class="text t1">
+            <p>So she got on the horse, and rode a long, long time, until she came to another cliff, under which sat another old woman, with a golden carding comb. The girl <a href="lark7.html"><span class="lark-link tooltip">asked
+                <span class="tooltiptext">
+                    &#x93;You shine all night, across all the fields and woods. Have you not seen a little white dove flying?&#x94;
+                </span>
+            </span></a> her if she knew the way to the castle that lay east of the sun and west of the moon, and she answered, like the first old woman, that she knew nothing about it, except that it was east of the sun and west of the moon.</p>
+        </div>
+        <div class="text t2">
+            <p>&#x93;And you'll get there too late or never; but you can borrow my horse to my next neighbor; maybe she'll tell you all about it; and when you get there, just switch the horse under the left ear, and beg him to be off for home.&#x94;</p>
+            <p>This old woman gave her the golden carding comb; she might find some use for it, she said. So the girl got up on the horse, and again rode a long, long way.</p>
+        </div>
+    </div>
+    
+ <!--Illustrations-->   
+    <div class="illustrations" 
+    data-000="left:29.5%;"
+    data-3000="left:-30%;"
+    data-5000="left:-30%;">
+        <div class="split draw1">
+            <img class="ink ink1" src="img/ink/riding_horse.png">
+            <img src="img/ink/oldwoman2.png" class="ink ink2">
+            <!-- <span class="subtitle">riding horse...............................................................................old woman</span> -->
+        </div>
+    </div>
+
+
+<!--Next Scene-->
+    <a href="east9.html">
+        <div class="link-img">
+        <img src="img/east-link.png">
+            <span class="linktext">At last, she came to another great cliff</span>
+        </div>
+    </a>
+
+</div><!--container-->
+
+    <script src="src/skrollr.js"></script>
+
+    <script type="text/javascript">
+        var s = skrollr.init({
+            render: function(data) {
+            //Debugging - Log the current scroll position.
+            console.log(data.curTop);
+        }
+    });
+        
+    </script>
+    
+</body>
+</html>

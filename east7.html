@@ -1,0 +1,138 @@
+<!DOCTYPE HTML> 
+<html> 
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/convergences.js"></script>
+
+    <Link rel="stylesheet" href="css/style.css">
+    <Link rel="stylesheet" href="css/east-style.css">
+        
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500,500i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet">
+    <style>
+        body {height: 10000px;}
+        .holder {width: 10000px;}
+        .temp-text-block {height: 55%;}
+        .t3 {left:170%;}
+        .ink0 {float: left}
+        .ink1 {padding-right: 30%;}
+    </style>
+
+</head>
+<body>
+<div class="container">
+
+<!--Marker-->
+    <p style="z-index: 100;" id="count">0000</p>
+
+    <div class="holder" data-0="left:0px" data-10000="left:-8560px">   
+            <div class="marker">
+                <p>1000</p>
+                <p>2000</p>
+                <p>3000</p>
+                <p>4000</p>
+                <p>5000</p>
+                <p>6000</p>
+                <p>7000</p>
+                <p>8000</p>
+                <p>9000</p>
+                <p>10000</p>
+            </div>  
+    </div>
+
+<!--Navigation-->
+    <a href="east1.html" class="homelink"><div class="home">
+        <h6>home</h6>
+    </div></a>
+
+    <div class="storyline-btn">
+        <img src="img/storyline/storyline-btn.png">
+        <div class="storyline">
+            <img src="img/storyline/east7.png">
+        </div>
+    </div>
+    
+<!--Backgrounds-->
+    <div class="back" data-0="left:0px" data-10000="left:-72px">
+        <div class="backgroundcolor"></div>
+<!--         <img class="backgroundimg" src="img/east7.jpg">
+        <img class="backgroundimg" src="img/east7-2.jpg"> -->
+    </div>
+
+<!--Text boxes-->
+    <div class="story" 
+    data-0="left:0%" 
+    data-3000="left:-30%"
+    data-5000="left:-30%"
+    data-6000="left:-100%"
+    data-9000="left:-100%">
+        <div class="text t1">
+            <p>The next morning, when she woke up, both the prince and the castle were gone, and she was lying on a little green patch, in the midst of the thick, dark forest, and by her side lay the same bundle of rags she had brought with her from her old home.</p>
+            <p>When she had rubbed the sleep out of her eyes, and cried until she was tired, she set out on her way, and walked many, many days, until she came to a high cliff.</p>
+        </div>
+        <div class="text t2">
+            <p> An old woman sat under it, and played with a golden apple which she tossed about. The girl <a href="lark7.html"><span class="lark-link tooltip">asked
+                <span class="tooltiptext">
+                    &#x93;You shine into every crack, and over every peak. Have you not seen a little white dove flying?&#x94;
+                </span>
+            </span></a> her if she knew the way to the prince, who lived with his stepmother in the castle east of the sun and west of the moon, and who was to marry the princess with a nose three yards long.</p>
+            <p>&#x93;How did you come to know about him?&#x94; asked the old woman. &#x93;Maybe you are the girl who should have had him?&#x94;</p>
+            <p>Yes, she was.</p>
+            <p>&#x93;So, so; it's you, is it?&#x94; said the old woman. &#x93;Well...</p>
+            <!--insert text-block-4 here-->
+        </div>
+        <div class="text t3">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <p>but still you may borrow my horse, and you can ride him to my next neighbor. Maybe she'll be able to tell you; and when you get there just give the horse a switch under the left ear, and beg him to be off home. And you can take this golden apple along with you.&#x94;</p>
+        </div>
+    </div>
+
+<!--Expressive text-->
+    <img class="temp-text-block embed" src="img/east-text-4.jpg"
+    data-4000="left:150%; top:8%;" 
+    data-6000="left: 35%; top:8%;"
+    data-9000="left: 35%; top:8%">
+<!--     <div class="text-block" id="tb4">
+        <span id="tb4-1">all I know about him is, that he lives in the castle east of the sun and west of the moon, and that you’ll get there too late or never.</span>
+        <span id="tb4-2"></span>
+    </div> -->
+    
+ <!--Illustrations-->   
+    <div class="illustrations" 
+    data-000="left:29.5%;"
+    data-3000="left:-30%;"
+    data-5000="left:-30%;"
+    data-6000="left:-140%;">
+        <div class="split draw1">
+            <img class="ink ink0" src="img/ink/walking_against_wind.png">
+            <img src="img/ink/oldwoman.png" class="ink ink1">
+            <!-- <span class="subtitle">walking....................................................................................old woman</span> -->
+        </div>
+    </div>
+
+
+<!--Next Scene-->
+    <a href="east8.html">
+        <div class="link-img">
+        <img src="img/east-link.png">
+            <span class="linktext">So she got on the horse and rode a long, long time</span>
+        </div>
+    </a>
+
+
+</div><!--container-->
+
+    <script src="src/skrollr.js"></script>
+
+    <script type="text/javascript">
+        var s = skrollr.init({
+            render: function(data) {
+            //Debugging - Log the current scroll position.
+            console.log(data.curTop);
+        }
+    });
+        
+    </script>
+    
+</body>
+</html>

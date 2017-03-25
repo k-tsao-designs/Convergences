@@ -1,0 +1,109 @@
+<!DOCTYPE HTML> 
+<html> 
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/convergences.js"></script>
+
+    <Link rel="stylesheet" href="css/style.css">
+    <Link rel="stylesheet" href="css/east-style.css">
+        
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500,500i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet">
+    <style>
+        body {height: 4000px;}
+        .holder {width: 4000px;}
+        .link-img {top:60%;right:16%;}
+    </style>
+    
+</head>
+<body>
+<div class="container">
+
+<!--Marker-->
+    <p style="z-index: 100;" id="count">0000</p>
+
+    <div class="holder" data-0="left:0px" data-4000="left:-4000px">   
+            <div class="marker">
+                <p>1000</p>
+                <p>2000</p>
+                <p>3000</p>
+                <p>4000</p>
+            </div>  
+    </div>
+
+<!--Navigation-->
+    <a href="east1.html" class="homelink"><div class="home">
+        <h6>home</h6>
+    </div></a>
+
+    <div class="storyline-btn">
+        <img src="img/storyline/storyline-btn.png">
+        <div class="storyline">
+            <img src="img/storyline/east4.png">
+        </div>
+    </div>
+    
+<!--Backgrounds-->
+    <div class="back" data-0="left:0px" data-10000="left:-72px">
+        <div class="backgroundcolor"></div>
+<!--         <img class="backgroundimg" src="img/east4.jpg"> -->
+    </div>
+
+<!--Text boxes-->
+    <div class="story" 
+    data-0="left:0%" 
+    data-2000="left: 0%"
+    data-4000="left:-30%">
+        <div class="text t1">
+            <p>Things went on happily for a while, but at last she became quiet and sad. She was alone all day long, and she became very homesick to see her <a href="lark5.html"><span class="lark-link tooltip">father
+                <span class="tooltiptext">
+                    She said yes, that she would like to see her father again...
+                </span>
+            </span></a> and mother and brothers and sisters. So one day, when the white bear asked what was wrong with her, she said it was so lonely there, and how she longed to go home to see her father and mother and brothers and sisters, and that was why she was so sad, because she couldn't get to them.</p>
+        </div>
+        <div class="text t2">
+            <p>&#x93;Well,&#x94; said the bear, &#x93;that can happen all right, but you must promise me, not to talk alone with your mother, but only when the others are around to hear. She will want to take you by the hand and lead you into a room to talk alone with her. But you must not do that, or else you'll bring bad luck on both of us.&#x94;</p>
+        </div>
+    </div>
+
+    
+ <!--Illustrations-->   
+    <div class="illustrations" 
+    data-0="left:29.5%;" 
+    data-2000="left:29.5%;"
+    data-4000="left:-70%;">
+        <div class="split draw1">
+            <!-- <span class="subtitle">loneliness</span> -->
+            <img class="ink" src="img/ink/loneliness.png">
+        </div>
+    </div>
+
+
+<!--Next Scene-->
+    <a href="east5.html">
+        <div class="link-img appear"
+        data-7000="opacity:0;"
+        data-7500="opacity:0.5;"
+        data-8000="opacity:1;">
+        <img src="img/east-link.png">
+            <span class="linktext">She went in to see</span>
+        </div>
+    </a>
+
+
+</div><!--container-->
+
+    <script src="src/skrollr.js"></script>
+
+    <script type="text/javascript">
+        var s = skrollr.init({
+            render: function(data) {
+            //Debugging - Log the current scroll position.
+            console.log(data.curTop);
+        }
+    });
+        
+    </script>
+    
+</body>
+</html>

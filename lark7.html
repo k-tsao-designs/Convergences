@@ -1,0 +1,228 @@
+<!DOCTYPE HTML> 
+<html> 
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/convergences.js"></script>
+
+    <Link rel="stylesheet" href="css/style.css">
+    <Link rel="stylesheet" href="css/lark-style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600,600i,700" rel="stylesheet">
+
+    <style>
+        body {height: 20000px;}
+        .holder {width: 20000px;}
+        .half {width: 30%;}
+        .draw2 {left:70%;}
+        .draw3 {left:140%;}
+        .ink2 {height: 20%; padding-top: 10%; padding-right: 20%;}
+        .tooltiptext {width: 305px;}
+        .tttwide {width:400px;}
+    </style>
+    
+    <script>
+        $("window").scroll(function() {
+            counter=document.body.scrollTop;
+            $("#count").html(counter);
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+
+<!--Marker-->
+    <p style="z-index: 100;" id="count">0000</p>
+
+    <div class="holder" data-0="left:0px" data-20000="left:-20000px">   
+            <div class="marker">
+                <p>1000</p>
+                <p>2000</p>
+                <p>3000</p>
+                <p>4000</p>
+                <p>5000</p>
+                <p>6000</p>
+                <p>7000</p>
+                <p>8000</p>
+                <p>9000</p>
+                <p>10000</p>
+                <p>11000</p>
+                <p>12000</p>
+                <p>13000</p>
+                <p>14000</p>
+                <p>15000</p>
+                <p>16000</p>
+                <p>17000</p>
+                <p>18000</p>
+                <p>19000</p>
+                <p>20000</p>
+            </div>  
+    </div>
+
+<!--Navigation-->
+    <a href="lark1.html" class="homelink"><div class="home">
+        <h6>home</h6>
+    </div></a>
+
+    <div class="storyline-btn">
+        <img src="img/storyline/storyline-btn.png">
+        <div class="storyline">
+            <img src="img/storyline/lark7.png">
+        </div>
+    </div>
+    
+<!--Backgrounds-->
+    <div class="back" data-0="left:0px" data-20000="left:-72px">
+        <div class="backgroundcolor"></div>
+    <!-- <img class="backgroundimg" src="img/cottage-outside.jpg"> -->
+    </div>
+
+<!--Text boxes-->
+    <div class="story" 
+    data-2000="left: 100%; z-index:50;"
+    data-4000="left: 30%"
+    data-6000="left: 30%; z-index:40;"
+    data-8000="left: 0%; z-index:40;"
+    data-9000="left: 0%;"
+    data-11000="left:-70%; z-index:50;"
+    data-13000="left:-70%; z-index:40;"
+    data-15000="left:-100%;"
+    data-16000="left:-100%"
+    data-18000="left:-170%; z-index:50;">
+        <div class="text t1">
+            <p>Then she thought, &#x93;Humans cannot help you now,&#x94; so she climbed up to the sun, and <a href="east7.html"><span class="east-link tooltip">asked,
+                <span class="tooltiptext">
+                    her if she knew the way to the prince
+                </span>
+            </span></a></p>
+            <!--insert text block 5-->
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <p>&#x93;No,&#x94; said the sun, &#x93;I have not seen it, but I will give you a little chest. Open it if you are in great need.&#x94;</p>
+        </div>
+        <div class="text t2">
+            <p>Then she thanked the sun and went on until evening came and the moon was shining. She then <a href="east8.html"><span class="east-link tooltip">asked
+                <span class="tooltiptext">
+                    her if she knew the way to the prince
+                </span>
+            </span></a> the moon,</p>
+            <!--insert text-block-6 here-->
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <p>&#x93;No,&#x94; said the moon, &#x93;I have not seen it, but I will give you an egg. Break it open if you are in great need.&#x94;</p>
+        </div>
+        <div class="text t3">
+            <p>Then she thanked the moon and went on until the night <a href="east10.html"><span class="east-link tooltip">wind came
+                <span class="tooltiptext tttwide">
+                    could he tell her the way to the prince who lived east of the sun and west of the moon?
+                </span>
+            </span></a>up and blew against her. She said to it,</p>
+            <!--insert text-block-7 here-->
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <p>&#x93;No,&#x94; said the night wind, &#x93;I have not seen it, but I will ask the three other winds. Perhaps they have seen it.&#x94;</p>
+        </div>
+    </div>
+
+<!--Expressive text-->
+    <img class="temp-text-block embed" src="img/lark-text-5.jpg"
+    data-2000="left:125%; top:25%;" 
+    data-4000="left: 25%; top:25%;"
+    data-6000="left: 25%; top:25%"
+    data-8000="left:-75%; top:25%">
+
+    <img class="temp-text-block embed" src="img/lark-text-6.jpg"
+    data-9000="left:125%; top:25%;" 
+    data-11000="left: 25%; top:25%;"
+    data-13000="left: 25%; top:25%"
+    data-15000="left:-75%; top:25%">
+
+    <img class="temp-text-block embed" src="img/lark-text-7.jpg"
+    data-16000="left:125%; top:25%;" 
+    data-18000="left: 25%; top:25%;">
+<!--     <div class="text-block" id="tb5">
+        <span id="tb5-1">You shine into every crack, and over every peak. Have you not seen a little white dove flying?</span>
+        <span id="tb5-2"></span>
+    </div>
+    <div class="text-block" id="tb6">
+        <span id="tb6-1">You shine all night, across all the fields and woods. Have you not seen a little white dove flying?</span>
+        <span id="tb6-2"></span>
+    </div>
+    <div class="text-block" id="tb7">
+        <span id="tb7-1">You blow over all the trees and under all the leaves. Have you not seen a little white dove flying?</span>
+        <span id="tb7-2"></span>
+    </div> -->
+    
+<!--Illustrations-->   
+    <div class="illustrations illustration-overlap">
+        <div class="half draw1 overlap1">
+            <img class="ink" src="img/ink/girl_asks_help.png">
+            <!-- <span class="subtitle">girl begs help</span> -->
+        </div>
+    </div>
+
+    <div class="illustrations" 
+    data-000="left:100%"
+    data-2000="left:30%"
+
+    data-6000="left:30%;"
+    data-8000="left:-30%;"
+
+    data-14000="left:-30%;"
+    data-16000="left:-100%;">
+        <div class="fill draw1">
+            <img class="ink" src="img/ink/ink-sun.png">
+            <!-- <span class="subtitle">sun</span> -->
+        </div>
+        <div class="fill draw2">
+            <img class="ink ink2" src="img/ink/ink-moon.png">
+            <!-- <span class="subtitle">moon</span> -->
+        </div>
+        <div class="fill draw3">
+            <img class="ink" src="img/ink/northwind.png">
+            <!-- <span class="subtitle">wind</span> -->
+        </div>
+    </div>
+
+
+<!--Next Scene-->
+    <a href="lark8.html">
+        <div class="link-img"
+        data-4000="top:-10%;left:60%;"
+        data-4500="top: 20%;left:75%;"
+        data-5000="top: 30%;left:110%;"
+        data-6000="top: -110%;left:110%;"
+        data-8000="top: -110%;left:-10%;"
+        data-18000="top: 32%;left:-6%;"
+        data-18300="top: 17.34%;left: 7.942%;"
+        data-18600="top: 12.14%;left: 14.382%;"
+        data-19000="top: 18%;left:22%;">
+        <img src="img/lark-link-R.png">
+            <span class="linktext">The east wind and the west wind came, and had seen nothing</span>
+        </div>
+    </a>
+
+    <a href="lark8.html">
+        <div class="link-img link-img2"
+        data-11000="top: 23.5%;left:100%;"
+        data-11500="top: 55%;left:92%;"
+        data-12000="top: 80%;left:82%;"
+        data-12500="top: 100%;left:70%;">
+        <img src="img/lark-link-L.png">
+            <span class="linktext">The east wind and the west wind came, and had seen nothing</span>
+        </div>
+    </a>
+
+
+</div><!--container-->
+
+    <script src="src/skrollr.js"></script>
+
+    <script type="text/javascript">
+        var s = skrollr.init({
+            render: function(data) {
+            //Debugging - Log the current scroll position.
+            console.log(data.curTop);
+        }
+    });
+        
+    </script>
+    
+</body>
+</html>
