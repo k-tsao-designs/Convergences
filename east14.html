@@ -8,12 +8,12 @@
     <Link rel="stylesheet" href="css/east-style.css">
 
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500,500i,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet">
 
     <style>
         body {height: 10000px;}
         .holder {width: 10000px;}
         .ink1 {float: left;}
+        .link-img {top:14%;right: 50%;}
     </style>
     
 </head>
@@ -23,7 +23,7 @@
 <!--Marker-->
     <p style="z-index: 100;" id="count">0000</p>
 
-    <div class="holder" data-0="left:0px" data-10000="left:-8560px">   
+    <div class="holder" data-0="left:0px" data-10000="left:-10000px">   
             <div class="marker">
                 <p>1000</p>
                 <p>2000</p>
@@ -42,6 +42,10 @@
     <a href="east1.html" class="homelink"><div class="home">
         <h6>home</h6>
     </div></a>
+
+    <div class="autoscroll-btn">
+        <i class="fa fa-pause" aria-hidden="true"></i>
+    </div>
 
     <div class="storyline-btn">
         <img src="img/storyline/storyline-btn.png">
@@ -63,9 +67,7 @@
     data-4000="left:-30%"
     data-6000="left:-30%"
     data-8000="left:-100%"
-    data-10000="left:-100%"
-    data-12000="left:-130%;"
-    data-14000="left:-130%;">
+    data-10000="left:-130%">
         <div class="text t1">
             <p>That day the girl <a href="lark10.html"><span class="lark-link tooltip">sat down
                 <span class="tooltiptext">
@@ -94,11 +96,10 @@
     </div>
 
 <!--Expressive text-->
-    <img class="temp-text-block full" src="img/east-text-7.jpg"
+    <img class="temp-text-block full" src="img/dialogue/east-text-7.jpg"
     data-6000="left:150%; top:10%;" 
     data-8000="left: 35%; top:10%;"
-    data-10000="left: 35%; top:10%"
-    data-12000="left: 5%; top:10%">
+    data-10000="left: 5%; top:10%">
 <!--     <div class="text-block" id="tb7">
         <span id="tb7-1">Now you are the only woman in the world who can set me free.</span>
         <span id="tb7-2"></span>
@@ -110,11 +111,8 @@
     data-2000="left:30%;"
     data-4000="left:0%; "
     data-6000="left:0%;"
-    data-8000="left:-70%;"
-    data-10000="left:-70%;">
-        <div class="fill draw1" 
-        data-2000="background-color:rgb(232,145,101)" 
-        data-4000="background-color:rgb(88,46,25)">
+    data-8000="left:-70%;">
+        <div class="fill draw1">
         <img src="img/ink/girl-negotiation.png" class="ink ink1">
             <!-- <span class="subtitle">negotiation</span> -->
         </div>
@@ -122,7 +120,10 @@
 
 <!--Next Scene-->
     <a href="east15.html">
-        <div class="link-img">
+        <div class="link-img appear"
+        data-9000="opacity:0;top:100%;"
+        data-9500="opacity:0.5;"
+        data-10000="opacity:1;top:14%;">
         <img src="img/east-link.png">
             <span class="linktext">But the next day, when the wedding was planned, the prince said</span>
         </div>

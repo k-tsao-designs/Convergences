@@ -2,17 +2,19 @@
 <html> 
 <head>
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://use.fontawesome.com/317c40ed00.js"></script>
     <script type="text/javascript" src="js/convergences.js"></script>
     
     <Link rel="stylesheet" href="css/style.css">
     <Link rel="stylesheet" href="css/east-style.css">
 
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500,500i,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet">
+
     <style>
-        body {height: 10000px;}
-        .holder {width: 10000px;}
+        body {height: 9000px;}
+        .holder {width: 9000px;}
         .t2 {left: 130%;}
+        .link-img {top:52%; right:20%;}
     </style>
     
 </head>
@@ -22,7 +24,7 @@
 <!--Marker-->
     <p style="z-index: 100;" id="count">0000</p>
 
-    <div class="holder" data-0="left:0px" data-10000="left:-8560px">   
+    <div class="holder" data-0="left:0px" data-9000="left:-9000px">   
             <div class="marker">
                 <p>1000</p>
                 <p>2000</p>
@@ -33,7 +35,6 @@
                 <p>7000</p>
                 <p>8000</p>
                 <p>9000</p>
-                <p>10000</p>
             </div>  
     </div>
 
@@ -41,6 +42,10 @@
     <a href="east1.html" class="homelink"><div class="home">
         <h6>home</h6>
     </div></a>
+
+    <div class="autoscroll-btn">
+        <i class="fa fa-pause" aria-hidden="true"></i>
+    </div>
 
     <div class="storyline-btn">
         <img src="img/storyline/storyline-btn.png">
@@ -65,6 +70,7 @@
         <div class="text t1">
             <p>Early next morning the north wind woke her, and puffed himself up, and blew himself out, and made himself so stout and big. that he was gruesome to look at. Off they went high up through the air, as if they would not stop until they reached the end of the world. Here on earth there was a terrible storm; acres of forest and many houses were blown down, and when it swept over the sea, ships wrecked by the hundred.</p>
             <p>They tore on and on &#x97; no one can believe how far they went &#x97; and all the while they still went over the sea, and the north wind got more and more weary, and so out of breath he could barely bring out a puff, and his wings drooped and drooped, until at last he sunk so low that the tops of the waves splashed over his heels.</p>
+            <p>The north wind asked:</p>
         </div>
         <!--insert text-block-1 here-->
         <div class="text t2">
@@ -73,10 +79,10 @@
     </div>
 
 <!--Expressive text-->
-    <img class="temp-text-block full" src="img/east-text-1.jpg"
-    data-1000="left:130%; top:10%;" 
-    data-3000="left: 30%; top:10%;"
-    data-6000="left: 30%; top:10%"
+    <img class="temp-text-block full" src="img/dialogue/east-text-1.jpg"
+    data-2000="left:130%; top:10%;" 
+    data-4000="left: 50%; top:12%;"
+    data-6000="left: 50%; top:12%"
     data-8000="left:-100%; top:10%">
 <!--     <div class="text-block" id="tb1b">
         <span id="tb1-1">Are you</span>
@@ -86,9 +92,9 @@
     
  <!--Illustrations-->   
     <div class="illustrations" 
-    data-0="left:29.5%;"
-    data-2000="left:29.5%;"
-    data-4000="left:0%;">
+    data-0="left:35%;"
+    data-2000="left:35%;"
+    data-4000="left:8%;">
         <div class="fill draw1">
             <img class="ink" src="img/ink/riding_wind.png">
             <!-- <span class="subtitle">riding wind</span> -->
@@ -97,7 +103,10 @@
 
 <!--Next Scene-->
     <a href="east12.html">
-        <div class="link-img">
+        <div class="link-img"
+        data-8000="opacity:0;"
+        data-8500="opacity:0.5;"
+        data-9000="opacity:1;">
         <img src="img/east-link.png">
             <span class="linktext">The next morning the girl sat down under the castle window, and began to play</span>
         </div>

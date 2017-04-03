@@ -14,6 +14,7 @@
         .holder {width: 5000px;}
         .ink1 {float: left;}
         .ink2 {padding-right: 29%;}
+        .link-img {top:8%;left:17%;}
     </style>
     
 </head>
@@ -38,6 +39,10 @@
     <a href="east1.html" class="homelink"><div class="home">
         <h6>home</h6>
     </div></a>
+
+    <div class="autoscroll-btn">
+        <i class="fa fa-pause" aria-hidden="true"></i>
+    </div>
 
     <div class="storyline-btn">
         <img src="img/storyline/storyline-btn.png">
@@ -85,7 +90,10 @@
 
 <!--Next Scene-->
     <a href="east10.html">
-        <div class="link-img">
+        <div class="link-img appear"
+        data-4000="opacity:0;"
+        data-4500="opacity:0.5;"
+        data-5000="opacity:1;">
         <img src="img/east-link.png">
             <span class="linktext">She rode many weary days</span>
         </div>

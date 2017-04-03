@@ -20,12 +20,10 @@ body {
 /*    padding-top: 3.66%;*/
     top: -0.3%;
     padding-left: 3%;
-    mix-blend-mode: multiply;
 }
 
 .backgroundcolor {
-    background-color: #879DBF;
-    opacity: .25;
+    background-color: #feb1bc;
     height: 100%;
     width: 100%;
     position: fixed;
@@ -75,7 +73,7 @@ body {
     width: 350px;
     padding: 4% 2.5%;
     margin: 0;
-    background-color: #A7CAE1;
+    background-color: #e2a6a7;
 /*    opacity: .9;*/
     position: absolute;
     font-weight: 500;
@@ -121,8 +119,20 @@ body {
     /*background-color: #CDB643;*/
     height: 100%;
     position: absolute;
-    width: 35%;
+    width: 30%;
 }
+.minihalf {
+    height: 100%;
+    position: absolute;
+    width: 30%;
+}
+.vignette {
+    height: 75%;
+    position: absolute;
+    width: 30%;
+}
+
+/*aka overflow*/
 .split {
     /*background-color: #CD4343;*/
     height: 100%;
@@ -184,13 +194,28 @@ body {
     background-color: white;
 }
 
+/*Word link text*/
+@keyframes larklinkhover {
+    from {color: #404b5d;}
+    to {color: #404b5d;}
+}
 
-
+.lark-link {
+    color: #404b5d;
+}
+.lark-link:hover {
+    animation-name: larklinkhover;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
 
 /* Tooltip text */
 .tooltiptext {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 500;
+    background-color: #9dadbe;
+    color: white;
 }
 
 

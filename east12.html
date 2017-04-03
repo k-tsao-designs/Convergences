@@ -8,11 +8,12 @@
     <Link rel="stylesheet" href="css/east-style.css">
 
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500,500i,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet">
+
     <style>
         body {height: 10000px;}
         .holder {width: 10000px;}
         .t3 {left: 170%;}
+        .link-img {top:10%;left:9%;}
     </style>
     
 </head>
@@ -41,6 +42,10 @@
     <a href="east1.html" class="homelink"><div class="home">
         <h6>home</h6>
     </div></a>
+
+    <div class="autoscroll-btn">
+        <i class="fa fa-pause" aria-hidden="true"></i>
+    </div>
 
     <div class="storyline-btn">
         <img src="img/storyline/storyline-btn.png">
@@ -88,7 +93,7 @@
     </div>
 
 <!--Expressive text-->
-    <img class="temp-text-block embed" src="img/east-text-6.jpg"
+    <img class="temp-text-block embed" src="img/dialogue/east-text-6.jpg"
     data-2000="left:100%; top:45%;" 
     data-4000="left: 15%; top:45%;"
     data-8000="left: 15%; top:45%"
@@ -100,10 +105,10 @@
     
  <!--Illustrations-->   
     <div class="illustrations" 
-    data-0="left:0;"
+    data-0="left:100%;"
+    data-2000="left:0"
     data-8000="left:0%;"
-    data-10000="left:-100%;"
-    data-12000="left:-100%;">
+    data-10000="left:-100%;">
         <div class="fill draw1">
             <img src="img/ink/girl-negotiation.png" class="ink ink1">
             <!-- <span class="subtitle">negotiation</span> -->
@@ -116,7 +121,10 @@
 
 <!--Next Scene-->
     <a href="east13.html">
-        <div class="link-img">
+        <div class="link-img appear"
+        data-9000="opacity:0;"
+        data-9500="opacity:0.5;"
+        data-10000="opacity:1;">
         <img src="img/east-link.png">
             <span class="linktext">That day she sat down under the castle windows and began to card</span>
         </div>

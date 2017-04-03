@@ -7,7 +7,7 @@
     <Link rel="stylesheet" href="css/style.css">
     <Link rel="stylesheet" href="css/lark-style.css">
         
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600,600i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:500,600,600i,700" rel="stylesheet">
 
     <style>
         .tooltip {
@@ -20,16 +20,11 @@
         .tooltip .tooltiptext {
             visibility: hidden;
             width: 400px;
-            background-color: white;
-            color: black;
             text-align: left;
             padding: 5px 6px;
             border-radius: 6px;
             margin-top: -.2em;
-            z-index: 125 !important;
-            /* Position the tooltip text - see examples below! */
-            position: absolute;
-            z-index: 1;
+            font-weight: 500;
         }
     </style>
     
@@ -60,6 +55,10 @@
     <a href="lark1.html" class="homelink"><div class="home">
         <h6>home</h6>
     </div></a>
+
+    <div class="autoscroll-btn">
+        <i class="fa fa-pause" aria-hidden="true"></i>
+    </div>
 
     <div class="storyline-btn">
         <img src="img/storyline/storyline-btn.png">
@@ -98,7 +97,7 @@
         </div>
         <div class="text t2" id="youngestdaughter">
             <p>The lion said, &#x93;Nothing can save you unless you will promise to give me that which first meets you upon your arrival at home. If you will do that, I will grant you your life, and you shall have the bird for your daughter as well.&#x94;</p>
-            <p>The man hesitated, saying, &#x93;That could be my <a href="east2#youngestdaughter.html"><span class="east-link tooltip">youngest daughter.
+            <p>The man hesitated, saying, &#x93;That could be my <a href="east2.html#youngestdaughter" data-menu-top="2000"><span class="east-link tooltip">youngest daughter.
                 <span class="tooltiptext">
                     &#x93;Will you give me your youngest daughter?&#x94;
                 </span>
@@ -147,19 +146,17 @@
 </div><!--container-->
 
     <script src="src/skrollr.js"></script>
+    <script src="src/skrollr.menu.min.js"></script>
 
     <script type="text/javascript">
         var s = skrollr.init({
             render: function(data) {
-            //Debugging - Log the current scroll position.
-            console.log(data.curTop);
-
-        }
-    });
+                //Debugging - Log the current scroll position.
+                console.log(data.curTop);
+            }
+        });
         
     </script>
-
-     <script type="text/javascript" src="js/convergences.js"></script>
     
 </body>
 </html>

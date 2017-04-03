@@ -8,10 +8,10 @@
     <Link rel="stylesheet" href="css/east-style.css">
 
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500,500i,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet">
+
     <style>
-        body {height: 8000px;}
-        .holder {width: 8000px;}
+        body {height: 3000px;}
+        .holder {width: 3000px;}
     </style>
     
 </head>
@@ -21,16 +21,11 @@
 <!--Marker-->
     <p style="z-index: 100;" id="count">0000</p>
 
-    <div class="holder" data-0="left:0px" data-8000="left:-8000px">   
+    <div class="holder" data-0="left:0px" data-3000="left:-3000px">   
             <div class="marker">
                 <p>1000</p>
                 <p>2000</p>
                 <p>3000</p>
-                <p>4000</p>
-                <p>5000</p>
-                <p>6000</p>
-                <p>7000</p>
-                <p>8000</p>
             </div>  
     </div>
 
@@ -38,6 +33,10 @@
     <a href="east1.html" class="homelink"><div class="home">
         <h6>home</h6>
     </div></a>
+
+    <div class="autoscroll-btn">
+        <i class="fa fa-pause" aria-hidden="true"></i>
+    </div>
 
     <div class="storyline-btn">
         <img src="img/storyline/storyline-btn.png">
@@ -47,7 +46,7 @@
     </div>
     
 <!--Backgrounds-->
-    <div class="back" data-0="left:0px" data-8000="left:-72px">
+    <div class="back" data-0="left:0px" data-3000="left:-72px">
         <div class="backgroundcolor"></div>
     </div>
 
@@ -66,7 +65,7 @@
 <!--Illustrations-->   
     <div class="illustrations" 
     data-0="left:130%;" 
-    data-4000="left:30%;">
+    data-2000="left:30%;">
         <div class="fill draw1">
             <span class="subtitle">The End.</span>
         </div>
@@ -75,7 +74,10 @@
 
 <!--Next Scene-->
     <a href="welcome.html">
-        <div class="link-img">
+        <div class="link-img appear"
+        data-2000="opacity:0;"
+        data-2500="opacity:0.5;"
+        data-3000="opacity:1;">
         <img src="img/east-link.png">
             <span class="linktext">Back to all stories</span>
         </div>

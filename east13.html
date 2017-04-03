@@ -8,12 +8,13 @@
     <Link rel="stylesheet" href="css/east-style.css">
 
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500,500i,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet">
+
     <style>
-        body {height: 8000px;}
-        .holder {width: 8000px;}
+        body {height: 5000px;}
+        .holder {width: 5000px;}
         .draw2 {left:70.5%;}
         .ink1 {float: left;}
+        .link-img {top:9%;left:39%;}
     </style>
     
 </head>
@@ -23,17 +24,13 @@
 <!--Marker-->
     <p style="z-index: 100;" id="count">0000</p>
 
-    <div class="holder" data-0="left:0px" data-8000="left:-8000px">   
+    <div class="holder" data-0="left:0px" data-5000="left:-5000px">   
             <div class="marker">
                 <p>1000</p>
                 <p>2000</p>
                 <p>3000</p>
                 <p>4000</p>
                 <p>5000</p>
-                <p>6000</p>
-                <p>7000</p>
-                <p>8000</p>
-                <p>9000</p>
             </div>  
     </div>
 
@@ -41,6 +38,10 @@
     <a href="east1.html" class="homelink"><div class="home">
         <h6>home</h6>
     </div></a>
+
+    <div class="autoscroll-btn">
+        <i class="fa fa-pause" aria-hidden="true"></i>
+    </div>
 
     <div class="storyline-btn">
         <img src="img/storyline/storyline-btn.png">
@@ -52,24 +53,27 @@
 <!--Backgrounds-->
     <div class="back" data-0="left:0px" data-8000="left:-72px">
         <div class="backgroundcolor"></div>
-<!--         <img class="backgroundimg" src="img/east12.jpg"> -->
+<!--         <img class="backgroundimg" src="img/bg/meadow.jpg"> -->
     </div>
 
 <!--Text boxes-->
     <div class="story" 
-    data-0="left: 0%"
-    data-8000="left: 0%">
+    data-0="left: 70%"
+    data-2000="left: 00%"
+    data-4000="left: -100%">
         <div class="text t1">
-            <p>That day she sat down under the castle windows and began to card with her golden carding comb, and the same thing happened. The princess asked what she wanted for it. She said it wasn't for sale for gold or money, but if she could have permission to go to the prince and be with him that night, the princess could have it. But when she went to his room she found him fast asleep again, and however much she called, and shook, and cried, and prayed, she couldn't get life into him. As soon as the first gray peep of day came, the princess with the long nose came, and chased her out again.</p>
+            <p>That day she sat down under the castle windows and began to card with her golden carding comb, and the same thing happened. The princess asked what she wanted for it. She said it wasn't for sale for gold or money, but if she could have permission to go to the prince and be with him that night, the princess could have it.</p>
+        </div>
+        <div class="text t2">
+            <p>But when she went to his room she found him fast asleep again, and however much she called, and shook, and cried, and prayed, she couldn't get life into him. As soon as the first gray peep of day came, the princess with the long nose came, and chased her out again.</p>
         </div>
     </div>
     
  <!--Illustrations-->   
     <div class="illustrations" 
-    data-0="left:30%;"
-    data-3000="left:30%;"
-    data-6000="left:-41%;"
-    data-8000="left:-41%;">
+    data-0="left:70%;"
+    data-2000="left:30%;"
+    data-4000="left:-41%;">
         <div class="fill draw1">
             <img src="img/ink/girl-negotiation.png" class="ink ink1">
             <!-- <span class="subtitle">negotiation</span> -->
@@ -83,7 +87,10 @@
 
 <!--Next Scene-->
     <a href="east14.html">
-        <div class="link-img">
+        <div class="link-img appear"
+        data-4000="opacity:0;"
+        data-4500="opacity:0.5;"
+        data-5000="opacity:1;">
         <img src="img/east-link.png">
             <span class="linktext">That day the girl sat down outside under the castle window and began to spin</span>
         </div>
